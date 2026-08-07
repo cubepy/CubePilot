@@ -9,8 +9,20 @@ tier, no seat limit, no ads, and nothing to unlock with a purchase.
 
 CubePilot is built by [CubePy](https://cubesystem.top) alongside the rest of
 the Cube ecosystem. It is not a business on its own and doesn't need to pay
-for itself. Starring the repo and reporting good bugs is the only thing we
-ask for.
+for itself.
+
+There is an optional
+[crypto donation link](../README.md#️-support-the-project) for anyone who
+wants to chip in toward hosting, signing certificates and test devices.
+Donating changes nothing about the app: there is no supporter tier, no badge,
+and no feature that donors get and you don't. Starring the repo and filing
+good bug reports help just as much.
+
+## Will there ever be a paid version?
+
+No. Every feature stays free on both platforms. If we ever build something
+genuinely separate — say team-oriented services — it would be additional,
+never a fence around what you already have.
 
 ## Why is the source code not public?
 

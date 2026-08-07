@@ -175,6 +175,18 @@ Stuck on something that may not be a bug? Try **[docs/troubleshooting.md](docs/t
 
 Open a **[Feature request](https://github.com/cubepy/CubePilot/issues/new/choose)**, or start a thread in **[Discussions → Ideas](https://github.com/cubepy/CubePilot/discussions)** if you want to talk it through before it becomes a formal request. Tell us the problem you're hitting, not only the solution you have in mind — it usually leads to a better feature.
 
+## ❤️ Support the project
+
+CubePilot is free, and it stays free — every feature, on both platforms, with no pro tier and no ads. That promise doesn't change.
+
+If it saves you time and you'd like to chip in toward hosting, signing certificates and testing devices, a crypto donation is very welcome — and entirely optional.
+
+<a href="https://nowpayments.io/donation?api_key=8f7c86ca-bc8e-4f2f-bf8a-6e8397c836ab" target="_blank" rel="noreferrer noopener">
+  <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments" width="200">
+</a>
+
+Free ways to help are worth just as much: ⭐ star the repository, file a good bug report, or tell someone who is still juggling four terminal windows.
+
 ## 📄 License
 
 CubePilot is free to use, personally and commercially, under a proprietary end-user license. The source code is not published. See **[LICENSE](LICENSE)**.
