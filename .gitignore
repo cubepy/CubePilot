@@ -1,0 +1,71 @@
+# This is the PUBLIC CubePilot repository: documentation and releases only.
+# No application source, build output, signing material or development assets
+# belong here. The rules below are defence in depth — if git ever ignores a
+# file because of this list, that file is in the wrong repository.
+#
+# Application source lives in the private repository. Compiled artifacts
+# (.apk / .exe / .msix) are attached to GitHub Releases, never committed.
+
+# --- Source ---
+*.dart
+*.kt
+*.java
+*.rs
+*.swift
+*.cpp
+*.h
+pubspec.yaml
+pubspec.lock
+analysis_options.yaml
+Cargo.toml
+Cargo.lock
+lib/
+test/
+android/
+ios/
+windows/
+linux/
+macos/
+web/
+
+# --- Build systems and output ---
+*.gradle
+*.gradle.kts
+gradlew
+gradlew.bat
+gradle/
+build/
+.dart_tool/
+target/
+out/
+
+# --- Release artifacts (publish via GitHub Releases, do not commit) ---
+*.apk
+*.aab
+*.exe
+*.msix
+*.msi
+*.appx
+*.zip
+*.dmg
+
+# --- Secrets and signing material ---
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+key.properties
+*.env
+.env*
+google-services.json
+secrets.*
+
+# --- Editors and OS noise ---
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini

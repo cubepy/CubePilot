@@ -1,0 +1,94 @@
+name: 💡 Feature request
+description: Suggest something CubePilot should be able to do
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Lead with the **problem**, not the solution. Telling us what you are
+        struggling with usually produces a better feature than describing the
+        one you already have in mind.
+
+        Want to talk it through with other users first? Start a thread in
+        [Discussions → Ideas](https://github.com/cubepy/CubePilot/discussions)
+        instead.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched [existing issues](https://github.com/cubepy/CubePilot/issues?q=is%3Aissue) and this is not a duplicate
+          required: true
+        - label: I checked the [Roadmap](https://github.com/cubepy/CubePilot/blob/main/docs/roadmap.md) and it is not already planned
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: What are you doing today, and where does it get painful?
+      placeholder: "I manage servers for three different clients and can't tell them apart at a glance in the list."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like CubePilot to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you work around it now?
+      description: Including how another tool solves it, if one does.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform is this for?
+      options:
+        - Both Android and Windows
+        - Android only
+        - Windows only
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      options:
+        - Dashboard
+        - Server management
+        - Terminal
+        - SFTP file manager
+        - Docker
+        - Kubernetes
+        - Port forwarding
+        - Monitoring
+        - Server Timeline
+        - Command library / Snippets
+        - Log viewer
+        - SSH keys
+        - Security / App lock
+        - Backup
+        - Settings
+        - Theming / Design
+        - Something new
+    validations:
+      required: true
+
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How much does this matter to you?
+      options:
+        - I can't use CubePilot for my workflow without it
+        - It would save me real time every day
+        - Nice to have
+    validations:
+      required: true

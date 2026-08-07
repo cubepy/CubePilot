@@ -1,0 +1,135 @@
+name: 🐞 Bug report
+description: Something in CubePilot is broken or behaves incorrectly
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        ⚠️ **Never paste an SSH private key, password, passphrase, backup file
+        or a real server hostname / IP into this issue.** Replace them with
+        placeholders such as `server.example.com` and `203.0.113.10`.
+
+        Found a **security vulnerability**? Do not file it here — follow
+        [SECURITY.md](https://github.com/cubepy/CubePilot/blob/main/SECURITY.md)
+        and report it privately.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched [existing issues](https://github.com/cubepy/CubePilot/issues?q=is%3Aissue) and this is not a duplicate
+          required: true
+        - label: I am on the [latest release](https://github.com/cubepy/CubePilot/releases/latest)
+          required: true
+        - label: I checked [Troubleshooting](https://github.com/cubepy/CubePilot/blob/main/docs/troubleshooting.md)
+          required: true
+        - label: This report contains no keys, passwords or real server addresses
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: CubePilot version
+      description: Found in Settings → About
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - Windows
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS version
+      placeholder: "Android 14 (Pixel 7) / Windows 11 23H2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      options:
+        - Dashboard
+        - Server management
+        - Terminal
+        - SFTP file manager
+        - Docker
+        - Kubernetes
+        - Port forwarding
+        - Monitoring
+        - Server Timeline
+        - Command library / Snippets
+        - Log viewer
+        - SSH keys
+        - Security / App lock
+        - Backup
+        - Settings
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem in a sentence or two.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Tap …
+        3. See …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+
+  - type: input
+    id: server
+    attributes:
+      label: Server it happened against
+      description: OS and SSH server version, if the bug involves a connection. No hostnames or IPs.
+      placeholder: "Ubuntu 24.04, OpenSSH 9.6"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Attach anything that helps. Redact first — this field is rendered as code, not hidden.
+      render: shell
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Often
+        - Occasionally
+        - Happened once
+    validations:
+      required: true
