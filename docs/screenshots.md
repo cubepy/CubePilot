@@ -35,23 +35,32 @@ the identifying parts before committing it.
 
 ## Shot list
 
-| File | Screen | What should be on screen |
-| --- | --- | --- |
-| `01-dashboard.png` | Dashboard | Non-zero stat cards, quick-connect field, an open session listed |
-| `02-servers.png` | Servers | Four servers, folder chips visible, a pinned and a starred entry |
-| `03-terminal.png` | Terminal | Two tabs open, colorized `ls -l` output, prompt visible |
-| `04-timeline.png` | Timeline | Mixed event kinds, at least one bookmarked note and one tagged event |
-| `05-sftp.png` | Files | A populated remote directory with permission strings |
-| `06-tunnels.png` | Tunnels | One running and one stopped tunnel |
-| `07-keys.png` | SSH Keys | Two keys with fingerprints |
-| `08-settings.png` | Settings | Theme picker and the terminal section |
+| File | Screen | What should be on screen | Status |
+| --- | --- | --- | --- |
+| `01-dashboard.jpg` | Dashboard | Non-zero stat cards, quick-connect field, an open session listed | ✅ |
+| `02-servers.jpg` | Servers | Four servers, folder chips visible, a pinned and a starred entry | ✅ |
+| `03-terminal.jpg` | Terminal | Two tabs open, colorized `ls -l` output, prompt visible | ⏳ |
+| `04-timeline.jpg` | Timeline | Mixed event kinds, at least one bookmarked note and one tagged event | ✅ |
+| `05-sftp.jpg` | Files | A populated remote directory with permission strings | ⏳ |
+| `06-tunnels.jpg` | Tunnels | One running and one stopped tunnel | ✅ |
+| `07-keys.jpg` | SSH Keys | Two keys with fingerprints | ✅ |
+| `08-settings.jpg` | Settings | Theme picker and the terminal section | ✅ |
+
+The two pending shots both need a **live session**, which the demo build
+cannot give you — its servers are documentation-range addresses that
+deliberately route nowhere. Take those two against a real host and blur
+the hostname, prompt and any path that identifies the machine before
+committing. The README gallery already omits them, so nothing renders
+broken until they land.
 
 The first four carry the most weight — a reader rarely scrolls past them.
-If time is short, do those properly and add the rest later.
 
 ## Naming and format
 
-- PNG, no scaling or borders added afterwards.
+- JPEG, quality 85–90. The gallery is six images on one page; PNG
+  screenshots of a dark UI came out several megabytes each, which is a
+  slow README on a phone.
+- No scaling, borders or device frames added afterwards.
 - Numbered prefixes as above, so the gallery order is stable.
 - Commit them to `assets/screenshots/`.
 
