@@ -1,2 +1,6 @@
-Screenshots of the app will be added here with the first public release (v0.1.0).
-Nothing is placed in this folder until real builds exist — no mockups are passed off as product shots.
+Screenshots referenced by the README gallery go here, named
+01-dashboard.png … 08-settings.png.
+
+Take them from the demo build (artifact `cubepilot-android-demo`), never
+from a real workspace — see docs/screenshots.md for the reasoning and the
+full shot list.
