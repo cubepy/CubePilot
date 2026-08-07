@@ -155,19 +155,20 @@ Step-by-step instructions, including how to install an APK outside the Play Stor
 
 <table>
   <tr>
-    <td width="25%"><img src="assets/screenshots/01-dashboard.png" alt="Dashboard"><br><sub><b>Dashboard</b></sub></td>
-    <td width="25%"><img src="assets/screenshots/02-servers.png" alt="Servers"><br><sub><b>Servers</b></sub></td>
-    <td width="25%"><img src="assets/screenshots/03-terminal.png" alt="Terminal"><br><sub><b>Terminal</b></sub></td>
-    <td width="25%"><img src="assets/screenshots/04-timeline.png" alt="Server Timeline"><br><sub><b>Server Timeline</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/01-dashboard.jpg" alt="Dashboard"><br><sub><b>Dashboard</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/02-servers.jpg" alt="Servers"><br><sub><b>Servers</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="Server Timeline"><br><sub><b>Server Timeline</b></sub></td>
   </tr>
   <tr>
-    <td><img src="assets/screenshots/05-sftp.png" alt="SFTP"><br><sub><b>SFTP</b></sub></td>
-    <td><img src="assets/screenshots/06-tunnels.png" alt="Tunnels"><br><sub><b>Tunnels</b></sub></td>
-    <td><img src="assets/screenshots/07-keys.png" alt="SSH keys"><br><sub><b>SSH keys</b></sub></td>
-    <td><img src="assets/screenshots/08-settings.png" alt="Settings"><br><sub><b>Settings</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/06-tunnels.jpg" alt="Tunnels"><br><sub><b>Tunnels</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/07-keys.jpg" alt="SSH keys"><br><sub><b>SSH keys</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/08-settings.jpg" alt="Settings"><br><sub><b>Settings</b></sub></td>
   </tr>
 </table>
 
+> Terminal and SFTP shots are pending — both need a live session, and the
+> demo workspace is deliberately unreachable.
+>
 > Every server shown is fabricated: the addresses come from the
 > documentation ranges reserved by RFC 5737 and RFC 2606, so no real
 > infrastructure appears in any of these. See
