@@ -16,8 +16,11 @@ addresses all come from the documentation ranges reserved by
 `198.51.100.x`, `192.0.2.x`, `*.example.com`. Those can never route to
 anything real.
 
-Grab `cubepilot-android-demo` from the latest CI run's artifacts. It is a
-separate build; install it, take the shots, uninstall it.
+Grab `cubepilot-android-demo` from the latest CI run's artifacts. It
+installs as a separate app — package `top.cubesystem.cubepilot.demo`,
+labelled **CubePilot Demo** — so it sits beside the real app rather than
+replacing it. Install it, take the shots, uninstall it; the real app and
+its vault are untouched.
 
 If a shot must show something the demo build can't produce, blur or edit
 the identifying parts before committing it.
