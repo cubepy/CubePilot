@@ -1,3 +1,5 @@
 # Adds the "Sponsor" button to the repository header.
 # CubePilot is free and stays free — this is purely optional support.
-custom: ["https://nowpayments.io/donation?api_key=8f7c86ca-bc8e-4f2f-bf8a-6e8397c836ab"]
+custom:
+  - "https://w.donofa.com/ZdhITI5heu9EJBIYhEgdljPzDJ4GGV2s32Ad4crTx1t1oFiF4ki97UxGiE8VU6g8"
+  - "https://nowpayments.io/donation?api_key=8f7c86ca-bc8e-4f2f-bf8a-6e8397c836ab"

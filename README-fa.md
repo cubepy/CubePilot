@@ -181,6 +181,10 @@ CubePilot رایگان است و رایگان می‌ماند — همهٔ قا�
 
 اگر برایتان مفید بوده و دوست دارید در هزینه‌های هاست، گواهی امضا و دستگاه‌های تست سهیم شوید، دونیشن کریپتو با آغوش باز پذیرفته می‌شود — و کاملاً اختیاری است.
 
+**از داخل ایران:** [حمایت ریالی از طریق دونوفا](https://w.donofa.com/ZdhITI5heu9EJBIYhEgdljPzDJ4GGV2s32Ad4crTx1t1oFiF4ki97UxGiE8VU6g8) — کارت‌به‌کارت، بدون نیاز به کیف‌پول کریپتو.
+
+**از خارج ایران:**
+
 <a href="https://nowpayments.io/donation?api_key=8f7c86ca-bc8e-4f2f-bf8a-6e8397c836ab" target="_blank" rel="noreferrer noopener">
   <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="دونیشن کریپتو با NOWPayments" width="200">
 </a>
