@@ -51,87 +51,116 @@ Search it, filter it, tag it, bookmark it. Three weeks later, when something bre
 
 ## ✨ Features
 
+This README describes where CubePilot is going. Sections tagged **v0.1.0** are
+in the build you can download today; the rest is on the
+[roadmap](docs/roadmap.md).
+
 <details open>
-<summary><b>Terminal</b></summary>
+<summary><b>Terminal</b> — <code>v0.1.0</code></summary>
 
-Multi-tab sessions · split view · session manager · in-terminal search · bookmarks · copy mode · paste history · command palette · zoom · professional color schemes · font and cursor selection
+Multi-tab sessions in one window · 256-colour support · client-side syntax
+highlighting that colours plain server output · professional colour schemes ·
+font size selection
+
+<sub>Planned: split view · session manager · in-terminal search · bookmarks ·
+copy mode · paste history · command palette</sub>
 </details>
 
 <details>
-<summary><b>Server management</b></summary>
+<summary><b>Server management</b> — <code>v0.1.0</code></summary>
 
-Rich server cards showing OS, country, IP, ping, CPU, RAM, disk, uptime, online status, last connection and tags · search · folders · workspaces · smart groups · favorites · pinning
+Folders · favorites · pinning · search · tags · per-server HTTP and SOCKS5
+proxy, for hosts you cannot reach directly
+
+<sub>Planned: live server cards showing OS, country, ping, CPU, RAM, disk and
+uptime · workspaces · smart groups</sub>
 </details>
 
 <details>
-<summary><b>SFTP file manager</b></summary>
+<summary><b>SFTP file manager</b> — <code>v0.1.0</code></summary>
 
-Dual-pane layout · drag & drop · upload and download · rename, delete and edit in place · permission editor · file preview · folder size calculation · search
+Browse · upload · download · rename · delete · permission editor
+
+<sub>Planned: dual-pane layout · drag &amp; drop · in-place editing · file
+preview · folder size calculation · search</sub>
 </details>
 
 <details>
-<summary><b>Docker</b></summary>
+<summary><b>Port forwarding</b> — <code>v0.1.0</code></summary>
 
-Containers, images, networks and volumes · start, stop and restart · live logs · shell into a container · resource stats · delete
+Local forward · remote forward · dynamic SOCKS5 · saved and managed tunnels
 </details>
 
 <details>
-<summary><b>Kubernetes</b></summary>
+<summary><b>Command library &amp; snippets</b> — <code>v0.1.0</code></summary>
 
-Pods, deployments, services, namespaces, ConfigMaps and secrets · logs · exec terminal
+Save the commands you actually use — restart Nginx, restart Docker, update the
+system, run a backup, git pull, deploy — and fire them with one tap. Ships with
+26 ready-made snippets for Linux, Nginx, Docker, Git, Kubernetes and SSH.
 </details>
 
 <details>
-<summary><b>Port forwarding</b></summary>
+<summary><b>SSH key manager</b> — <code>v0.1.0</code></summary>
 
-Local forward · remote forward · dynamic SOCKS5 · HTTP proxy · saved and managed tunnels
+RSA, ED25519 and ECDSA · import and generate · fingerprint display · passphrase
+support · keys held in the platform's secure storage
 </details>
 
 <details>
-<summary><b>Monitoring</b></summary>
+<summary><b>Security</b> — <code>v0.1.0</code></summary>
 
-Live CPU, RAM, disk, network, temperature, bandwidth, ping, uptime and load average, with clean charts
+Fingerprint unlock · PIN · auto-lock · AES-256-GCM encrypted vault with the
+master key in the platform keystore · host key verification
+
+<sub>Planned: Windows Hello</sub>
 </details>
 
 <details>
-<summary><b>Command library & snippets</b></summary>
+<summary><b>Backup, no account required</b> — <code>v0.1.0</code></summary>
 
-Save the commands you actually use — restart Nginx, restart Docker, update the system, run a backup, git pull, deploy — and fire them with one tap. Ships with a ready-made snippet library for SSH, Git, Docker, Kubernetes, Nginx and Linux.
+Export and import an encrypted backup file. Your data stays yours — there is no
+CubePilot cloud, and nothing is uploaded anywhere.
 </details>
 
 <details>
-<summary><b>Log viewer</b></summary>
+<summary><b>Docker</b> — <sub>planned, v0.4.0</sub></summary>
+
+Containers, images, networks and volumes · start, stop and restart · live logs ·
+shell into a container · resource stats · delete
+</details>
+
+<details>
+<summary><b>Kubernetes</b> — <sub>planned, v0.4.0</sub></summary>
+
+Pods, deployments, services, namespaces, ConfigMaps and secrets · logs · exec
+terminal
+</details>
+
+<details>
+<summary><b>Log viewer</b> — <sub>planned, v0.4.0</sub></summary>
 
 Syntax-colored log output · search · regex · bookmarks · export
 </details>
 
 <details>
-<summary><b>SSH key manager</b></summary>
+<summary><b>Monitoring</b> — <sub>planned, v0.5.0</sub></summary>
 
-RSA, ED25519 and ECDSA · import, export and generate · fingerprint display · passphrase support · keys held in the platform's secure storage
-</details>
-
-<details>
-<summary><b>Security</b></summary>
-
-Fingerprint unlock · Windows Hello · PIN · auto-lock · encrypted local database · secure key vault
-</details>
-
-<details>
-<summary><b>Backup, no account required</b></summary>
-
-Export and import an encrypted backup file. Your data stays yours — there is no CubePilot cloud, and nothing is uploaded anywhere.
+Live CPU, RAM, disk, network, temperature, bandwidth, ping, uptime and load
+average, with clean charts
 </details>
 
 ### Platform-native touches
 
+Only the session notification has shipped so far; the rest is the v1.0.0
+milestone.
+
 | Android | Windows |
 | --- | --- |
-| Material You with dynamic color | Fluent Design |
-| Home-screen widget | Mica and Acrylic surfaces |
-| Quick Settings tile | Tray icon |
-| Floating terminal | Global shortcut |
-| Session notification | Multi-window |
+| Session notification — `v0.1.0` | Fluent Design |
+| Material You with dynamic color | Mica and Acrylic surfaces |
+| Home-screen widget | Tray icon |
+| Quick Settings tile | Global shortcut |
+| Floating terminal | Multi-window |
 | Split-screen support | Multi-monitor support |
 
 ## 🎨 Design
