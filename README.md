@@ -6,7 +6,7 @@
 
 A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kubernetes, tunnels and monitoring in one app, for **Android** and **Windows**.
 
-[![Status](https://img.shields.io/badge/status-in%20development-8B5CF6?style=for-the-badge)](docs/roadmap.md)
+[![Status](https://img.shields.io/badge/status-beta-8B5CF6?style=for-the-badge)](docs/roadmap.md)
 [![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=3B6EF6&label=latest)](https://github.com/cubepy/CubePilot/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/cubepy/CubePilot/total?style=for-the-badge&color=22D3EE)](https://github.com/cubepy/CubePilot/releases)
 [![Platforms](https://img.shields.io/badge/platforms-Android%20%7C%20Windows-3B6EF6?style=for-the-badge)](docs/installation.md)
@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **Heads-up:** CubePilot is under active development and has not shipped its first public build yet. This repository is where releases, documentation and issue tracking will live. Watch 👁 or Star ⭐ the repo to be notified when `v0.1.0` lands.
+> **v0.1.0 is out** — the first public beta, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). It is a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -145,7 +145,7 @@ All builds are published through **[GitHub Releases](https://github.com/cubepy/C
 | Platform | File | Requirement |
 | --- | --- | --- |
 | Android | `.apk` | Android 8.0 (API 26) or newer |
-| Windows | `.exe` installer / `.msix` | Windows 10 1809 or newer, 64-bit |
+| Windows | `.zip` (portable) | Windows 10 1809 or newer, 64-bit |
 
 Step-by-step instructions, including how to install an APK outside the Play Store and how to handle the SmartScreen prompt on Windows, are in **[docs/installation.md](docs/installation.md)**.
 

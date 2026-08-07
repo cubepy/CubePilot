@@ -6,7 +6,7 @@
 
 یک Workspace مدرن برای مدیریت تمام سرورهای شما — SSH، SFTP، Docker، Kubernetes، تونل‌ها و مانیتورینگ، همه در یک برنامه، برای **اندروید** و **ویندوز**.
 
-[![Status](https://img.shields.io/badge/status-in%20development-8B5CF6?style=for-the-badge)](docs/roadmap.md)
+[![Status](https://img.shields.io/badge/status-beta-8B5CF6?style=for-the-badge)](docs/roadmap.md)
 [![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=3B6EF6&label=latest)](https://github.com/cubepy/CubePilot/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/cubepy/CubePilot/total?style=for-the-badge&color=22D3EE)](https://github.com/cubepy/CubePilot/releases)
 [![Platforms](https://img.shields.io/badge/platforms-Android%20%7C%20Windows-3B6EF6?style=for-the-badge)](docs/installation.md)
@@ -19,7 +19,7 @@
 
 ---
 
-> **توجه:** CubePilot در حال توسعهٔ فعال است و هنوز اولین نسخهٔ عمومی آن منتشر نشده. این ریپازیتوری محل انتشار نسخه‌ها، مستندات و پیگیری مشکلات است. برای باخبر شدن از انتشار `v0.1.0` روی Watch 👁 یا Star ⭐ بزنید.
+> **نسخهٔ v0.1.0 منتشر شد** — اولین بتای عمومی، برای اندروید و ویندوز. از بخش [Releases](https://github.com/cubepy/CubePilot/releases/latest) بگیرید. این یک بتاست: برای استفادهٔ روزمره پایدار است ولی هنوز آزمایش گسترده نشده. برای باخبر شدن از نسخهٔ بعدی روی Watch 👁 یا Star ⭐ بزنید.
 
 ---
 
@@ -145,7 +145,7 @@ RSA، ED25519 و ECDSA · Import، Export و Generate · نمایش Fingerprint 
 | پلتفرم | فایل | حداقل نیاز |
 | --- | --- | --- |
 | اندروید | `.apk` | اندروید ۸.۰ (API 26) یا بالاتر |
-| ویندوز | نصاب `.exe` یا `.msix` | ویندوز ۱۰ نسخهٔ ۱۸۰۹ یا بالاتر، ۶۴ بیتی |
+| ویندوز | `.zip` (قابل حمل) | ویندوز ۱۰ نسخهٔ ۱۸۰۹ یا بالاتر، ۶۴ بیتی |
 
 راهنمای گام‌به‌گام نصب، شامل نصب APK خارج از Play Store و عبور از هشدار SmartScreen ویندوز، در **[docs/installation.md](docs/installation.md)** آمده است.
 
