@@ -175,6 +175,18 @@ RSA، ED25519 و ECDSA · Import، Export و Generate · نمایش Fingerprint 
 
 یک **[Feature request](https://github.com/cubepy/CubePilot/issues/new/choose)** باز کنید، یا اگر می‌خواهید قبل از تبدیل‌شدن به درخواست رسمی دربارهٔ آن گفتگو شود، در **[Discussions → Ideas](https://github.com/cubepy/CubePilot/discussions)** موضوع را مطرح کنید. مشکلی که با آن روبه‌رو شده‌اید را بنویسید، نه فقط راه‌حلی که در ذهن دارید — معمولاً به قابلیت بهتری می‌رسد.
 
+## ❤️ حمایت از پروژه
+
+CubePilot رایگان است و رایگان می‌ماند — همهٔ قابلیت‌ها، روی هر دو پلتفرم، بدون نسخهٔ pro و بدون تبلیغات. این وعده تغییر نمی‌کند.
+
+اگر برایتان مفید بوده و دوست دارید در هزینه‌های هاست، گواهی امضا و دستگاه‌های تست سهیم شوید، دونیشن کریپتو با آغوش باز پذیرفته می‌شود — و کاملاً اختیاری است.
+
+<a href="https://nowpayments.io/donation?api_key=8f7c86ca-bc8e-4f2f-bf8a-6e8397c836ab" target="_blank" rel="noreferrer noopener">
+  <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="دونیشن کریپتو با NOWPayments" width="200">
+</a>
+
+راه‌های رایگان حمایت هم به همان اندازه ارزش دارند: ⭐ ستاره دادن به ریپازیتوری، ثبت یک گزارش باگ خوب، یا معرفی برنامه به کسی که هنوز با چهار پنجرهٔ ترمینال سروکله می‌زند.
+
 ## 📄 لایسنس
 
 استفاده از CubePilot برای همه رایگان است، شخصی و تجاری، تحت یک لایسنس اختصاصی کاربر نهایی. سورس کد منتشر نمی‌شود. **[LICENSE](LICENSE)** را ببینید.
