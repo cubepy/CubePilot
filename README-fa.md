@@ -51,87 +51,113 @@ CubePilot **کاملاً رایگان** است؛ بدون حساب کاربری�
 
 ## ✨ قابلیت‌ها
 
+این README مسیری را توصیف می‌کند که CubePilot به سمت آن می‌رود. بخش‌هایی که با
+**v0.1.0** علامت خورده‌اند در نسخه‌ای هستند که همین حالا می‌توانید دانلود کنید؛
+بقیه در [نقشه راه](docs/roadmap.md) آمده‌اند.
+
 <details open>
-<summary><b>ترمینال</b></summary>
+<summary><b>ترمینال</b> — <code>v0.1.0</code></summary>
 
-سشن‌های Multi Tab · Split View · مدیریت سشن‌ها · جستجو داخل ترمینال · بوکمارک · Copy Mode · Paste History · Command Palette · زوم · رنگ‌بندی حرفه‌ای · انتخاب فونت و Cursor Style
+سشن‌های چندتبی در یک پنجره · پشتیبانی از ۲۵۶ رنگ · رنگ‌آمیزی سمت کلاینت روی
+خروجی سادهٔ سرور · رنگ‌بندی‌های حرفه‌ای · انتخاب اندازهٔ فونت
+
+<sub>در برنامه: Split View · مدیریت سشن‌ها · جستجو داخل ترمینال · بوکمارک ·
+Copy Mode · Paste History · Command Palette</sub>
 </details>
 
 <details>
-<summary><b>مدیریت سرورها</b></summary>
+<summary><b>مدیریت سرورها</b> — <code>v0.1.0</code></summary>
 
-کارت سرور با نمایش سیستم‌عامل، کشور، IP، پینگ، CPU، RAM، دیسک، Uptime، وضعیت آنلاین، آخرین اتصال و Tagها · جستجو · Folder · Workspace · Smart Groups · Favorites · Pin
+Folder · Favorite · Pin · جستجو · Tag · پروکسی HTTP و SOCKS5 برای هر سرور،
+برای میزبان‌هایی که مستقیم در دسترس نیستند
+
+<sub>در برنامه: کارت سرور زنده با نمایش سیستم‌عامل، کشور، پینگ، CPU، RAM، دیسک و
+Uptime · Workspace · Smart Groups</sub>
 </details>
 
 <details>
-<summary><b>مدیریت فایل SFTP</b></summary>
+<summary><b>مدیریت فایل SFTP</b> — <code>v0.1.0</code></summary>
 
-نمای دو پنلی · Drag & Drop · آپلود و دانلود · Rename، Delete و ویرایش در محل · ویرایشگر Permission · پیش‌نمایش فایل · محاسبهٔ حجم پوشه · جستجو
+مرور · آپلود · دانلود · Rename · Delete · ویرایشگر Permission
+
+<sub>در برنامه: نمای دو پنلی · Drag &amp; Drop · ویرایش در محل · پیش‌نمایش فایل ·
+محاسبهٔ حجم پوشه · جستجو</sub>
 </details>
 
 <details>
-<summary><b>Docker</b></summary>
+<summary><b>Port Forward</b> — <code>v0.1.0</code></summary>
 
-Containers، Images، Networks و Volumes · Start، Stop و Restart · لاگ زنده · Shell داخل کانتینر · Stats منابع · Delete
+Local Forward · Remote Forward · Dynamic SOCKS5 · ذخیره و مدیریت تونل‌ها
 </details>
 
 <details>
-<summary><b>Kubernetes</b></summary>
+<summary><b>Command Library و Snippets</b> — <code>v0.1.0</code></summary>
+
+دستورهایی که واقعاً استفاده می‌کنید را ذخیره کنید — ری‌استارت Nginx، ری‌استارت
+Docker، بروزرسانی سیستم، بکاپ، git pull، Deploy — و با یک ضربه اجرایشان کنید.
+به‌همراه ۲۶ Snippet آماده برای لینوکس، Nginx، Docker، Git، Kubernetes و SSH.
+</details>
+
+<details>
+<summary><b>مدیریت کلید SSH</b> — <code>v0.1.0</code></summary>
+
+RSA، ED25519 و ECDSA · Import و Generate · نمایش Fingerprint · پشتیبانی از
+Passphrase · نگهداری کلیدها در Secure Storage سیستم‌عامل
+</details>
+
+<details>
+<summary><b>امنیت</b> — <code>v0.1.0</code></summary>
+
+باز کردن با اثر انگشت · PIN · قفل خودکار · Vault رمزنگاری‌شده با AES-256-GCM و
+کلید اصلی در Keystore سیستم‌عامل · تأیید Host Key
+
+<sub>در برنامه: Windows Hello</sub>
+</details>
+
+<details>
+<summary><b>بکاپ، بدون نیاز به حساب کاربری</b> — <code>v0.1.0</code></summary>
+
+خروجی و ورودی گرفتن از یک فایل بکاپ رمزنگاری‌شده. داده‌های شما مال خودتان
+می‌ماند — هیچ سرور ابری‌ای برای CubePilot وجود ندارد و چیزی جایی آپلود نمی‌شود.
+</details>
+
+<details>
+<summary><b>Docker</b> — <sub>در برنامه، v0.4.0</sub></summary>
+
+Containers، Images، Networks و Volumes · Start، Stop و Restart · لاگ زنده ·
+Shell داخل کانتینر · Stats منابع · Delete
+</details>
+
+<details>
+<summary><b>Kubernetes</b> — <sub>در برنامه، v0.4.0</sub></summary>
 
 Pods، Deployments، Services، Namespaces، ConfigMaps و Secrets · لاگ · ترمینال exec
 </details>
 
 <details>
-<summary><b>Port Forward</b></summary>
-
-Local Forward · Remote Forward · Dynamic SOCKS5 · HTTP Proxy · ذخیره و مدیریت تونل‌ها
-</details>
-
-<details>
-<summary><b>مانیتورینگ</b></summary>
-
-نمایش لحظه‌ای CPU، RAM، دیسک، شبکه، دما، پهنای باند، پینگ، Uptime و Load Average به‌همراه نمودارهای تمیز
-</details>
-
-<details>
-<summary><b>Command Library و Snippets</b></summary>
-
-دستورهایی که واقعاً استفاده می‌کنید را ذخیره کنید — ری‌استارت Nginx، ری‌استارت Docker، بروزرسانی سیستم، بکاپ، git pull، Deploy — و با یک کلیک اجرایشان کنید. به‌همراه کتابخانهٔ آمادهٔ Snippet برای SSH، Git، Docker، Kubernetes، Nginx و لینوکس.
-</details>
-
-<details>
-<summary><b>Log Viewer</b></summary>
+<summary><b>Log Viewer</b> — <sub>در برنامه، v0.4.0</sub></summary>
 
 خروجی لاگ با رنگ‌بندی · جستجو · Regex · بوکمارک · Export
 </details>
 
 <details>
-<summary><b>مدیریت کلید SSH</b></summary>
+<summary><b>مانیتورینگ</b> — <sub>در برنامه، v0.5.0</sub></summary>
 
-RSA، ED25519 و ECDSA · Import، Export و Generate · نمایش Fingerprint · پشتیبانی از Passphrase · نگهداری کلیدها در Secure Storage سیستم‌عامل
-</details>
-
-<details>
-<summary><b>امنیت</b></summary>
-
-باز کردن با اثر انگشت · Windows Hello · PIN · قفل خودکار · دیتابیس محلی رمزنگاری‌شده · Secure Key Vault
-</details>
-
-<details>
-<summary><b>بکاپ، بدون نیاز به حساب کاربری</b></summary>
-
-خروجی و ورودی گرفتن از یک فایل بکاپ رمزنگاری‌شده. داده‌های شما مال خودتان می‌ماند — هیچ سرور ابری‌ای برای CubePilot وجود ندارد و چیزی جایی آپلود نمی‌شود.
+نمایش لحظه‌ای CPU، RAM، دیسک، شبکه، دما، پهنای باند، پینگ، Uptime و Load Average
+به‌همراه نمودارهای تمیز
 </details>
 
 ### ویژگی‌های اختصاصی هر پلتفرم
 
+تا اینجا فقط اعلان Session منتشر شده؛ بقیه بخشی از هدف v1.0.0 هستند.
+
 | اندروید | ویندوز |
 | --- | --- |
-| Material You با Dynamic Color | Fluent Design |
-| ویجت صفحه اصلی | سطوح Mica و Acrylic |
-| Quick Settings Tile | آیکون Tray |
-| ترمینال شناور | میان‌بر سراسری |
-| اعلان Session | Multi Window |
+| اعلان Session — `v0.1.0` | Fluent Design |
+| Material You با Dynamic Color | سطوح Mica و Acrylic |
+| ویجت صفحه اصلی | آیکون Tray |
+| Quick Settings Tile | میان‌بر سراسری |
+| ترمینال شناور | Multi Window |
 | پشتیبانی از Split Screen | پشتیبانی از چند مانیتور |
 
 ## 🎨 طراحی
