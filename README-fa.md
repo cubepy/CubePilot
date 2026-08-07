@@ -153,7 +153,24 @@ RSA، ED25519 و ECDSA · Import، Export و Generate · نمایش Fingerprint 
 
 ## 📸 تصاویر محیط برنامه
 
-تصاویر و ویدئوی معرفی همراه با اولین نسخهٔ عمومی اینجا اضافه می‌شوند. ترجیح می‌دهیم برنامهٔ واقعی را نشان دهیم، نه ماکاپ.
+<table>
+  <tr>
+    <td width="25%"><img src="assets/screenshots/01-dashboard.png" alt="داشبورد"><br><sub><b>داشبورد</b></sub></td>
+    <td width="25%"><img src="assets/screenshots/02-servers.png" alt="سرورها"><br><sub><b>سرورها</b></sub></td>
+    <td width="25%"><img src="assets/screenshots/03-terminal.png" alt="ترمینال"><br><sub><b>ترمینال</b></sub></td>
+    <td width="25%"><img src="assets/screenshots/04-timeline.png" alt="تایم‌لاین سرور"><br><sub><b>تایم‌لاین سرور</b></sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/05-sftp.png" alt="SFTP"><br><sub><b>SFTP</b></sub></td>
+    <td><img src="assets/screenshots/06-tunnels.png" alt="تونل‌ها"><br><sub><b>تونل‌ها</b></sub></td>
+    <td><img src="assets/screenshots/07-keys.png" alt="کلیدهای SSH"><br><sub><b>کلیدهای SSH</b></sub></td>
+    <td><img src="assets/screenshots/08-settings.png" alt="تنظیمات"><br><sub><b>تنظیمات</b></sub></td>
+  </tr>
+</table>
+
+> همهٔ سرورهای این تصاویر ساختگی‌اند: آدرس‌ها از بازه‌های مستندسازی
+> RFC 5737 و RFC 2606 گرفته شده‌اند، پس هیچ زیرساخت واقعی‌ای در آن‌ها
+> دیده نمی‌شود. [docs/screenshots.md](docs/screenshots.md) را ببینید.
 
 ## 🗺 نقشه راه
 
