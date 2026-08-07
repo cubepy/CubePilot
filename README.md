@@ -185,6 +185,8 @@ If it saves you time and you'd like to chip in toward hosting, signing certifica
   <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments" width="200">
 </a>
 
+**Inside Iran:** [donate in rial via Donofa](https://w.donofa.com/ZdhITI5heu9EJBIYhEgdljPzDJ4GGV2s32Ad4crTx1t1oFiF4ki97UxGiE8VU6g8) — card-to-card, no crypto wallet needed.
+
 Free ways to help are worth just as much: ⭐ star the repository, file a good bug report, or tell someone who is still juggling four terminal windows.
 
 ## 📄 License
