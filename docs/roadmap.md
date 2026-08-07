@@ -6,6 +6,10 @@ This is a direction, not a delivery contract — items move between milestones
 as they turn out to be harder, easier, or less useful than expected. Dates are
 deliberately absent; a milestone ships when it is good enough to ship.
 
+**A ticked box means built and working — not released.** Nothing has been
+published yet; the first public build lands when the last open v0.1.0 item
+does.
+
 Want something here that isn't? Open a
 [Feature request](https://github.com/cubepy/CubePilot/issues/new/choose) or
 bring it up in [Discussions](https://github.com/cubepy/CubePilot/discussions).
@@ -16,38 +20,38 @@ bring it up in [Discussions](https://github.com/cubepy/CubePilot/discussions).
 
 The smallest version that is genuinely useful every day.
 
-- [ ] Splash, onboarding and the dashboard
-- [ ] Server management: add, edit, delete, search, folders, favorites, pinning
-- [ ] SSH terminal with multi-tab sessions, professional color schemes, font
+- [x] Splash, onboarding and the dashboard
+- [x] Server management: add, edit, delete, search, folders, favorites, pinning
+- [x] SSH terminal with multi-tab sessions, professional color schemes, font
       and cursor selection
-- [ ] SSH key manager — RSA, ED25519, ECDSA; import, generate, fingerprint,
+- [x] SSH key manager — RSA, ED25519, ECDSA; import, generate, fingerprint,
       passphrase
-- [ ] Encrypted local database and secure key vault
-- [ ] App lock: fingerprint, Windows Hello, PIN, auto-lock
-- [ ] Dark, Light and OLED themes
-- [ ] English and Persian, with full RTL support
-- [ ] Encrypted backup export and import
+- [x] Encrypted local database and secure key vault
+- [x] App lock: fingerprint, Windows Hello, PIN, auto-lock
+- [x] Dark, Light and OLED themes
+- [x] English and Persian, with full RTL support
+- [x] Encrypted backup export and import
 - [ ] Android and Windows builds published on Releases
 
 ## v0.2.0 — Files and tunnels
 
-- [ ] SFTP file manager: dual-pane, drag & drop, upload, download, rename,
+- [x] SFTP file manager: dual-pane, drag & drop, upload, download, rename,
       delete, in-place edit, permissions, preview, folder size, search
-- [ ] Port forwarding: local, remote, dynamic SOCKS5 and HTTP proxy, with
+- [x] Port forwarding: local, remote, dynamic SOCKS5 and HTTP proxy, with
       saved tunnels
 - [ ] Split terminal view and the session manager
 - [ ] Command palette
-- [ ] Command library and the built-in snippet collection
+- [x] Command library and the built-in snippet collection
 
 ## v0.3.0 — Server Timeline
 
 CubePilot's signature feature, and the reason the app exists.
 
-- [ ] Per-server activity timeline: connections, session durations, commands,
+- [x] Per-server activity timeline: connections, session durations, commands,
       file transfers, permission changes, service and container restarts,
       tunnel lifecycle, errors, status changes
-- [ ] Notes attached to any point on the timeline
-- [ ] Search, filter, tag and bookmark across every event
+- [x] Notes attached to any point on the timeline
+- [x] Search, filter, tag and bookmark across every event
 - [ ] Timeline export
 
 ## v0.4.0 — Containers and orchestration

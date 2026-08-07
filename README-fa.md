@@ -157,21 +157,26 @@ RSA، ED25519 و ECDSA · Import، Export و Generate · نمایش Fingerprint 
   <tr>
     <td width="33%"><img src="assets/screenshots/01-dashboard.jpg" alt="داشبورد"><br><sub><b>داشبورد</b></sub></td>
     <td width="33%"><img src="assets/screenshots/02-servers.jpg" alt="سرورها"><br><sub><b>سرورها</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="تایم‌لاین سرور"><br><sub><b>تایم‌لاین سرور</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/03-terminal.jpg" alt="ترمینال"><br><sub><b>ترمینال</b></sub></td>
   </tr>
   <tr>
+    <td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="تایم‌لاین سرور"><br><sub><b>تایم‌لاین سرور</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/05-sftp.jpg" alt="مدیریت فایل SFTP"><br><sub><b>SFTP</b></sub></td>
     <td width="33%"><img src="assets/screenshots/06-tunnels.jpg" alt="تونل‌ها"><br><sub><b>تونل‌ها</b></sub></td>
+  </tr>
+  <tr>
     <td width="33%"><img src="assets/screenshots/07-keys.jpg" alt="کلیدهای SSH"><br><sub><b>کلیدهای SSH</b></sub></td>
     <td width="33%"><img src="assets/screenshots/08-settings.jpg" alt="تنظیمات"><br><sub><b>تنظیمات</b></sub></td>
+    <td width="33%"></td>
   </tr>
 </table>
 
-> تصاویر ترمینال و SFTP هنوز اضافه نشده‌اند — هر دو به یک سشن زنده نیاز
-> دارند و سرورهای دموی عمداً غیرقابل‌دسترس‌اند.
->
 > همهٔ سرورهای این تصاویر ساختگی‌اند: آدرس‌ها از بازه‌های مستندسازی
 > RFC 5737 و RFC 2606 گرفته شده‌اند، پس هیچ زیرساخت واقعی‌ای در آن‌ها
-> دیده نمی‌شود. [docs/screenshots.md](docs/screenshots.md) را ببینید.
+> دیده نمی‌شود. تصاویر ترمینال و SFTP استثنا هستند: هر دو به یک سشن زنده
+> نیاز دارند که سرورهای دمو عمداً نمی‌توانند فراهم کنند، پس از یک سرور
+> واقعی گرفته شده‌اند و نام میزبان در آن‌ها پاک شده است.
+> [docs/screenshots.md](docs/screenshots.md) را ببینید.
 
 ## 🗺 نقشه راه
 

@@ -157,22 +157,26 @@ Step-by-step instructions, including how to install an APK outside the Play Stor
   <tr>
     <td width="33%"><img src="assets/screenshots/01-dashboard.jpg" alt="Dashboard"><br><sub><b>Dashboard</b></sub></td>
     <td width="33%"><img src="assets/screenshots/02-servers.jpg" alt="Servers"><br><sub><b>Servers</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="Server Timeline"><br><sub><b>Server Timeline</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/03-terminal.jpg" alt="Terminal"><br><sub><b>Terminal</b></sub></td>
   </tr>
   <tr>
+    <td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="Server Timeline"><br><sub><b>Server Timeline</b></sub></td>
+    <td width="33%"><img src="assets/screenshots/05-sftp.jpg" alt="SFTP file manager"><br><sub><b>SFTP</b></sub></td>
     <td width="33%"><img src="assets/screenshots/06-tunnels.jpg" alt="Tunnels"><br><sub><b>Tunnels</b></sub></td>
+  </tr>
+  <tr>
     <td width="33%"><img src="assets/screenshots/07-keys.jpg" alt="SSH keys"><br><sub><b>SSH keys</b></sub></td>
     <td width="33%"><img src="assets/screenshots/08-settings.jpg" alt="Settings"><br><sub><b>Settings</b></sub></td>
+    <td width="33%"></td>
   </tr>
 </table>
 
-> Terminal and SFTP shots are pending — both need a live session, and the
-> demo workspace is deliberately unreachable.
->
-> Every server shown is fabricated: the addresses come from the
+> Every server in these shots is fabricated: the addresses come from the
 > documentation ranges reserved by RFC 5737 and RFC 2606, so no real
-> infrastructure appears in any of these. See
-> [docs/screenshots.md](docs/screenshots.md).
+> infrastructure appears in them. The terminal and SFTP shots are the
+> exception — both need a live session, which the demo workspace
+> deliberately cannot provide, so they were taken against a real host with
+> the hostname redacted. See [docs/screenshots.md](docs/screenshots.md).
 
 ## 🗺 Roadmap
 
