@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" width="560" height="140" role="img" aria-label="CubePilot">
+  <defs>
+    <linearGradient id="top" x1="26.7" y1="20" x2="113.3" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="left" x1="26.7" y1="45" x2="70" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B6EF6"/>
+      <stop offset="1" stop-color="#2447C7"/>
+    </linearGradient>
+    <linearGradient id="right" x1="113.3" y1="45" x2="70" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="word" x1="170" y1="50" x2="520" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B6EF6"/>
+      <stop offset="0.55" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M70 20 L113.3 45 L70 70 L26.7 45 Z" fill="url(#top)"/>
+  <path d="M26.7 45 L70 70 L70 120 L26.7 95 Z" fill="url(#left)"/>
+  <path d="M113.3 45 L113.3 95 L70 120 L70 70 Z" fill="url(#right)"/>
+
+  <text x="170" y="82" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif"
+        font-size="58" font-weight="700" letter-spacing="-1" fill="url(#word)">CubePilot</text>
+  <text x="172" y="112" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif"
+        font-size="17" font-weight="500" letter-spacing="5.5" fill="#8B93A7">FREE · PROFESSIONAL · CROSS PLATFORM</text>
+</svg>

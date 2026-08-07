@@ -1,0 +1,36 @@
+title: "[Idea]: "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are for thinking out loud before something becomes a formal
+        [Feature request](https://github.com/cubepy/CubePilot/issues/new/choose).
+        Half-formed is fine here.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's the idea?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it make better?
+      description: The workflow it improves, or the annoyance it removes.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Both Android and Windows
+        - Android only
+        - Windows only
+        - Not platform specific
+    validations:
+      required: true

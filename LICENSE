@@ -1,0 +1,118 @@
+CubePilot End User License Agreement (EULA)
+Copyright (c) 2026 CubePy. All rights reserved.
+
+This is a license for the CubePilot application ("the Software") in its
+compiled, distributed binary form. CubePilot is proprietary, closed-source
+software. Its source code is not published and is not covered by this
+license.
+
+By downloading, installing or using the Software, you agree to the terms
+below. If you do not agree, do not install or use the Software.
+
+
+1. GRANT OF LICENSE
+
+CubePy grants you a free, worldwide, non-exclusive, non-transferable,
+revocable license to install and use the Software on any number of devices
+you own or control, for personal or commercial purposes, at no cost.
+
+There is no fee, subscription, seat count or activation requirement for
+this license. Every feature of the Software is available to every user.
+
+
+2. RESTRICTIONS
+
+You may not:
+
+  a. Sell, rent, lease, sublicense or otherwise distribute the Software, or
+     redistribute it as part of another product or service.
+
+  b. Republish or mirror the Software's installers or packages outside the
+     official GitHub Releases page at
+     https://github.com/cubepy/CubePilot/releases, except for internal
+     distribution within your own organization, unmodified.
+
+  c. Reverse engineer, decompile, disassemble, or otherwise attempt to
+     derive the source code of the Software, except to the extent that
+     applicable law expressly permits this despite this limitation.
+
+  d. Modify, adapt, translate or create derivative works of the Software,
+     or patch, crack or circumvent any of its technical measures.
+
+  e. Remove, obscure or alter any CubePilot or CubePy branding, copyright
+     notice, trademark or attribution contained in the Software.
+
+
+3. OWNERSHIP
+
+The Software is licensed, not sold. CubePy retains all right, title and
+interest in and to the Software, including all intellectual property
+rights. The CubePilot and CubePy names and logos are trademarks of CubePy
+and are not licensed to you by this agreement.
+
+
+4. YOUR DATA
+
+The Software stores your data — including server definitions, credentials,
+SSH keys, session history and notes — locally on your own device. CubePy
+operates no account system and no synchronization service for the Software,
+and does not receive, collect or store this data.
+
+You are solely responsible for the security of the devices on which you run
+the Software, for the strength of any passphrase or PIN you set, and for
+the confidentiality and safekeeping of your own backups.
+
+
+5. THIRD-PARTY COMPONENTS
+
+The Software includes third-party open-source components, each governed by
+its own license. Those licenses are reproduced in full in the Software's
+"About → Open Source Licenses" screen and take precedence over this
+agreement with respect to those components.
+
+
+6. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NONINFRINGEMENT. CUBEPY DOES
+NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE
+AGAINST EVERY THREAT.
+
+
+7. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL CUBEPY
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY — INCLUDING WITHOUT
+LIMITATION LOSS OF DATA, LOSS OF PROFITS, SERVICE INTERRUPTION, OR
+UNAUTHORIZED ACCESS TO YOUR SYSTEMS — WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM OR IN CONNECTION WITH THE SOFTWARE OR ITS
+USE.
+
+You use the Software to administer your own systems at your own risk.
+
+
+8. TERMINATION
+
+This license terminates automatically if you breach any of its terms. On
+termination you must stop using the Software and remove all copies of it
+from your devices. Sections 3, 4, 6 and 7 survive termination.
+
+
+9. UPDATES
+
+Updates and new versions of the Software are distributed through GitHub
+Releases and are governed by this agreement, unless a later version is
+accompanied by a different license, in which case that license applies to
+that version.
+
+
+10. GENERAL
+
+If any provision of this agreement is held unenforceable, the remaining
+provisions remain in full force. CubePy's failure to enforce any provision
+is not a waiver of it.
+
+
+Questions about this license: open a discussion at
+https://github.com/cubepy/CubePilot/discussions
