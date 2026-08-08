@@ -12,6 +12,17 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.10] - 2026-08-08
+
+### Added
+- **Network throughput** on the dashboard, summed across every interface
+  except loopback, with the rate divided by the time that actually elapsed
+  rather than by the poll interval.
+- **Temperature** — the warmest thermal zone the kernel exposes, red past
+  80°C, and absent entirely on machines that expose none.
+- **Charts** — a sparkline of the last two minutes under CPU, memory and the
+  link, drawn directly rather than with a charting dependency.
+
 ## [0.1.9] - 2026-08-08
 
 ### Added
