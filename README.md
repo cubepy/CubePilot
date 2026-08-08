@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.9 is out** — Docker images, networks, volumes and live stats, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.10 is out** — bandwidth, temperature and charts on the dashboard, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -154,12 +154,11 @@ literally or with a regular expression · bookmarks · export what is on screen
 </details>
 
 <details>
-<summary><b>Monitoring</b> — <code>v0.1.5</code></summary>
+<summary><b>Monitoring</b> — <code>v0.1.5</code>, <code>v0.1.10</code></summary>
 
-Live CPU, RAM and disk on the dashboard, with load average, uptime, hostname
-and distribution, read over the connection you already have.
-
-<sub>Planned: network · temperature · bandwidth · ping · charts</sub>
+Live CPU, RAM, disk and network throughput on the dashboard, with temperature,
+load average, uptime, hostname and distribution — each with a chart of the last
+two minutes, read over the connection you already have.
 </details>
 
 ### Platform-native touches

@@ -66,9 +66,8 @@ CubePilot's signature feature, and the reason the app exists.
 
 ## v0.5.0 — Monitoring and polish
 
-- [x] Live monitoring: CPU, RAM, disk, uptime and load average on the
-      dashboard
-- [ ] Live monitoring: network, temperature, bandwidth, ping, with charts
+- [x] Live monitoring: CPU, RAM, disk, network throughput, temperature,
+      uptime and load average on the dashboard, each with a chart
 - [ ] Smart groups and workspaces
 - [x] Glass theme
 - [ ] Animation and performance pass targeting 120 fps on supported displays
