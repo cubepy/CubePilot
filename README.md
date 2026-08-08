@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.0 is out** — the first public beta, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). It is a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.6 is out** — split view and the session manager, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -51,19 +51,21 @@ Search it, filter it, tag it, bookmark it. Three weeks later, when something bre
 
 ## ✨ Features
 
-This README describes where CubePilot is going. Sections tagged **v0.1.0** are
-in the build you can download today; the rest is on the
-[roadmap](docs/roadmap.md).
+This README describes where CubePilot is going. Sections carry the version
+they shipped in — everything tagged is in the build you can download today;
+the rest is on the [roadmap](docs/roadmap.md).
 
 <details open>
 <summary><b>Terminal</b> — <code>v0.1.0</code></summary>
 
-Multi-tab sessions in one window · 256-colour support · client-side syntax
-highlighting that colours plain server output · professional colour schemes ·
-font size selection
+Multi-tab sessions in one window · split view, two servers side by side or
+stacked · session manager · automatic reconnection that keeps your scrollback ·
+256-colour support · client-side syntax highlighting that colours plain server
+output · search a session's output · copy, paste and text selection · a key bar
+carrying Esc, Tab, Ctrl, Alt and the arrows · command palette on `Ctrl+K` ·
+professional colour schemes · font size selection
 
-<sub>Planned: split view · session manager · in-terminal search · bookmarks ·
-copy mode · paste history · command palette</sub>
+<sub>Planned: bookmarks · paste history</sub>
 </details>
 
 <details>
@@ -123,10 +125,13 @@ CubePilot cloud, and nothing is uploaded anywhere.
 </details>
 
 <details>
-<summary><b>Docker</b> — <sub>planned, v0.4.0</sub></summary>
+<summary><b>Docker</b> — <code>v0.1.4</code></summary>
 
-Containers, images, networks and volumes · start, stop and restart · live logs ·
-shell into a container · resource stats · delete
+A server's containers, running and stopped · start, stop and restart · logs ·
+shell into a container · delete. Over the SSH connection you already have, so
+there is nothing to install and no second credential to store.
+
+<sub>Planned: images · networks · volumes · resource stats</sub>
 </details>
 
 <details>
@@ -143,10 +148,12 @@ Syntax-colored log output · search · regex · bookmarks · export
 </details>
 
 <details>
-<summary><b>Monitoring</b> — <sub>planned, v0.5.0</sub></summary>
+<summary><b>Monitoring</b> — <code>v0.1.5</code></summary>
 
-Live CPU, RAM, disk, network, temperature, bandwidth, ping, uptime and load
-average, with clean charts
+Live CPU, RAM and disk on the dashboard, with load average, uptime, hostname
+and distribution, read over the connection you already have.
+
+<sub>Planned: network · temperature · bandwidth · ping · charts</sub>
 </details>
 
 ### Platform-native touches

@@ -12,6 +12,76 @@ Every entry corresponds to a build published on the
 
 Work in progress toward `v0.2.0` is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.6] - 2026-08-08
+
+### Added
+- **Split view** — a second terminal beside the first, side by side or stacked
+  depending on the window, with a draggable divider and a coloured border on
+  the pane the keyboard is going to.
+- **Sessions** — one list of every open connection: what it is, how long it
+  has been up, whether it is still reconnecting, and which pane it is in, with
+  reconnect, open-beside, and close-all-disconnected.
+
+### Fixed
+- Attaching a file announced `Uploading $name…` literally instead of the file
+  name, in both languages.
+
+## [0.1.5] - 2026-08-08
+
+### Added
+- **Live monitoring** on the dashboard — CPU, memory and disk as bars, with
+  load average, uptime, hostname and distribution, read over the connection
+  you already have. CPU appears on the second sample rather than claiming 0%,
+  and `MemAvailable` falls back to free + buffers + cached on older kernels.
+
+## [0.1.4] - 2026-08-08
+
+### Added
+- **Docker** — a server's containers, running and stopped, with start, stop,
+  restart, remove, logs and a shell into a running container, over the SSH
+  connection already open.
+
+### Fixed
+- The Windows zip put every file at its root, so extracting it onto the
+  desktop scattered thirty-odd DLLs across it. Everything now sits inside a
+  single `CubePilot` folder.
+
+## [0.1.3] - 2026-08-08
+
+### Added
+- **Text selection** — the session's output as ordinary selectable text, which
+  brings Android's own handles, magnifier, word and paragraph selection and
+  copy menu, plus a copy-all button.
+
+### Fixed
+- The arrow keys were pushed off the right edge of the key bar on narrow
+  phones. The row is now ordered by how often a key is actually pressed.
+
+## [0.1.2] - 2026-08-08
+
+### Added
+- **Copy and paste** in the terminal, with bracketed paste so a multi-line
+  paste arrives as text instead of executing itself a line at a time.
+- **A key bar above the keyboard** — Esc, Tab, Ctrl, Alt and the arrows, and a
+  second row with Home, End, PgUp, PgDn and the characters a phone buries.
+- **Search a session's output**, every hit with its line number.
+- **A command palette** on `Ctrl+K`, over every screen, server and saved
+  command.
+- **Timeline export** as Markdown, CSV or JSON, exporting what your filters
+  have left on screen.
+
+### Fixed
+- The notification icon rendered as a white blob; Android draws small icons as
+  silhouettes, so it now ships a proper monochrome glyph.
+
+## [0.1.1] - 2026-08-07
+
+### Fixed
+- **Sessions reconnect themselves.** A WiFi handover, a sleeping phone or a
+  server-side timeout used to close the tab and take the scrollback with it.
+  The session now stays put and reconnects in place, with backoff, and refuses
+  a host key that changed while it was away.
+
 ## [0.1.0] - 2026-08-07
 
 First public beta, for Android and Windows.
