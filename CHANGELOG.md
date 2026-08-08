@@ -12,6 +12,17 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.12] - 2026-08-08
+
+### Changed
+- The Glass theme now shares one backdrop blur across every card on screen
+  instead of blurring the screen once per card, so the cost no longer grows
+  with the length of a list.
+- Terminal output was held for one frame at 60 Hz before being drawn, capping
+  what a 120 Hz display could show. The hold is now one frame at 120.
+- Charts and terminal views paint on their own layers, so a new sample or an
+  incoming byte no longer repaints the card and page around them.
+
 ## [0.1.11] - 2026-08-08
 
 ### Added
