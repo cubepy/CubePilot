@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.8 is out** — Kubernetes, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.9 is out** — Docker images, networks, volumes and live stats, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -125,13 +125,12 @@ CubePilot cloud, and nothing is uploaded anywhere.
 </details>
 
 <details>
-<summary><b>Docker</b> — <code>v0.1.4</code></summary>
+<summary><b>Docker</b> — <code>v0.1.4</code>, <code>v0.1.9</code></summary>
 
-A server's containers, running and stopped · start, stop and restart · logs ·
-shell into a container · delete. Over the SSH connection you already have, so
-there is nothing to install and no second credential to store.
-
-<sub>Planned: images · networks · volumes · resource stats</sub>
+Containers, running and stopped · start, stop and restart · logs · shell into a
+container · delete · live CPU, memory and network per container · images,
+networks and volumes, each removable. Over the SSH connection you already have,
+so there is nothing to install and no second credential to store.
 </details>
 
 <details>

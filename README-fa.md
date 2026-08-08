@@ -19,7 +19,7 @@
 
 ---
 
-> **نسخهٔ v0.1.8 منتشر شد** — Kubernetes، برای اندروید و ویندوز. از بخش [Releases](https://github.com/cubepy/CubePilot/releases/latest) بگیرید. هنوز بتاست: برای استفادهٔ روزمره پایدار است ولی آزمایش گسترده نشده. برای باخبر شدن از نسخهٔ بعدی روی Watch 👁 یا Star ⭐ بزنید.
+> **نسخهٔ v0.1.9 منتشر شد** — Imageها، Networkها، Volumeها و آمار زندهٔ Docker، برای اندروید و ویندوز. از بخش [Releases](https://github.com/cubepy/CubePilot/releases/latest) بگیرید. هنوز بتاست: برای استفادهٔ روزمره پایدار است ولی آزمایش گسترده نشده. برای باخبر شدن از نسخهٔ بعدی روی Watch 👁 یا Star ⭐ بزنید.
 
 ---
 
@@ -124,13 +124,12 @@ Passphrase · نگهداری کلیدها در Secure Storage سیستم‌عا�
 </details>
 
 <details>
-<summary><b>Docker</b> — <code>v0.1.4</code></summary>
+<summary><b>Docker</b> — <code>v0.1.4</code>، <code>v0.1.9</code></summary>
 
-کانتینرهای سرور، در حال اجرا و متوقف · Start، Stop و Restart · لاگ · Shell
-داخل کانتینر · Delete. روی همان اتصال SSH که دارید کار می‌کند، پس نه چیزی نصب
+کانتینرها، در حال اجرا و متوقف · Start، Stop و Restart · لاگ · Shell داخل
+کانتینر · Delete · CPU، حافظه و شبکهٔ زندهٔ هر کانتینر · Imageها، Networkها و
+Volumeها با امکان حذف. روی همان اتصال SSH که دارید کار می‌کند، پس نه چیزی نصب
 می‌شود و نه کلید و رمز دومی ذخیره می‌شود.
-
-<sub>در برنامه: Images · Networks · Volumes · Stats منابع</sub>
 </details>
 
 <details>
