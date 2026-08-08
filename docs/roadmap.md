@@ -77,8 +77,9 @@ CubePilot's signature feature, and the reason the app exists.
 
 ## v1.0.0 — Platform integration
 
-- [ ] Android: Material You dynamic color, home-screen widget, Quick Settings
-      tile, floating terminal, session notification, split-screen
+- [x] Android: Material You dynamic colour, session notification,
+      split-screen
+- [ ] Android: home-screen widget, Quick Settings tile, floating terminal
 - [ ] Windows: Fluent Design, Mica and Acrylic, tray icon, global shortcut,
       multi-window, multi-monitor
 - [x] Accessibility: labels on icon-only controls, one announcement per
