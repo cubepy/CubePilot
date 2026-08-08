@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.14 is out** — Material You, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.15 is out** — jump hosts, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -59,7 +59,7 @@ the rest is on the [roadmap](docs/roadmap.md).
 <summary><b>Terminal</b> — <code>v0.1.0</code></summary>
 
 Multi-tab sessions in one window · split view, two servers side by side or
-stacked · session manager · automatic reconnection that keeps your scrollback ·
+stacked · jump hosts, reaching a server through a bastion · session manager · automatic reconnection that keeps your scrollback ·
 256-colour support · client-side syntax highlighting that colours plain server
 output · search a session's output · copy, paste and text selection · a key bar
 carrying Esc, Tab, Ctrl, Alt and the arrows · command palette on `Ctrl+K` ·

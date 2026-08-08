@@ -96,7 +96,6 @@ Not committed to, but on our minds:
 
 - Linux and macOS builds
 - Mosh support
-- Jump hosts and bastion chains
 - Agent forwarding
 - Serial console
 - Team backup sharing that still requires no account

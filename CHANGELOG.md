@@ -12,6 +12,22 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.15] - 2026-08-08
+
+### Added
+- **Jump hosts** — a server can be reached through another saved server, and
+  through chains of up to four. CubePilot forwards a channel through the
+  bastion and runs the real connection down it, so the traffic stays
+  encrypted end to end. A hop authenticates with its own credentials and gets
+  the same host-key checking as anything else. A deleted jump host is an
+  error rather than a silent direct connection, and servers pointing at each
+  other in a loop are reported as one.
+
+### Changed
+- The documentation was brought in line with what actually ships: the
+  installation page described an `.exe` installer, an `.msix` and per-ABI
+  APKs that have never existed, and said no public build was available.
+
 ## [0.1.14] - 2026-08-08
 
 ### Added
