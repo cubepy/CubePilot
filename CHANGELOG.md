@@ -12,6 +12,18 @@ Every entry corresponds to a build published on the
 
 Work in progress toward `v0.2.0` is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.7] - 2026-08-08
+
+### Added
+- **Log viewer** — the systemd journal, the usual files under `/var/log`,
+  `dmesg`, or any path you type, read once or followed live over the
+  connection already open. Lines are coloured by severity, read from a
+  declared field, a bracketed level, a bare word, or the status code of an
+  access line. Filter literally or with a regular expression, with a severity
+  filter alongside; an expression that does not compile says why. Bookmark
+  lines by their number, filter to just the marks, and export exactly what is
+  on screen.
+
 ## [0.1.6] - 2026-08-08
 
 ### Added
