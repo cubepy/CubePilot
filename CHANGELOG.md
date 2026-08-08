@@ -12,6 +12,18 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.13] - 2026-08-08
+
+### Fixed
+- Icon-only keys in the terminal key bar announced nothing to a screen
+  reader; each now carries a label.
+- A monitoring reading is announced once — "CPU, 34%" — instead of as three
+  unrelated fragments, and the sparklines are hidden from screen readers
+  since they repeat the number above them.
+- A server in the list is announced as one item rather than a name, an
+  address, tags and icons separately.
+- The terminal's tab strip clipped its labels at large system text sizes.
+
 ## [0.1.12] - 2026-08-08
 
 ### Changed

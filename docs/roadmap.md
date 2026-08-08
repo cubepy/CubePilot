@@ -81,7 +81,10 @@ CubePilot's signature feature, and the reason the app exists.
       tile, floating terminal, session notification, split-screen
 - [ ] Windows: Fluent Design, Mica and Acrylic, tray icon, global shortcut,
       multi-window, multi-monitor
-- [ ] Full accessibility pass
+- [x] Accessibility: labels on icon-only controls, one announcement per
+      reading and per server, charts hidden from screen readers, layouts that
+      survive large system text
+- [ ] Full accessibility audit with a screen reader on both platforms
 - [ ] Stable release
 
 ---
