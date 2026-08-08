@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.7 is out** — a log viewer, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.8 is out** — Kubernetes, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -135,10 +135,15 @@ there is nothing to install and no second credential to store.
 </details>
 
 <details>
-<summary><b>Kubernetes</b> — <sub>planned, v0.4.0</sub></summary>
+<summary><b>Kubernetes</b> — <code>v0.1.8</code></summary>
 
-Pods, deployments, services, namespaces, ConfigMaps and secrets · logs · exec
-terminal
+Pods, deployments, services, ConfigMaps and Secrets · one namespace or all of
+them · pod logs and a shell inside a pod · rollout restart and scaling. Run
+through the server you are connected to, using the kubeconfig it already has,
+so no cluster credential goes on your phone.
+
+<sub>Secrets are listed by name and type only — CubePilot never reads their
+contents.</sub>
 </details>
 
 <details>

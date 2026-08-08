@@ -19,7 +19,7 @@
 
 ---
 
-> **نسخهٔ v0.1.7 منتشر شد** — Log Viewer، برای اندروید و ویندوز. از بخش [Releases](https://github.com/cubepy/CubePilot/releases/latest) بگیرید. هنوز بتاست: برای استفادهٔ روزمره پایدار است ولی آزمایش گسترده نشده. برای باخبر شدن از نسخهٔ بعدی روی Watch 👁 یا Star ⭐ بزنید.
+> **نسخهٔ v0.1.8 منتشر شد** — Kubernetes، برای اندروید و ویندوز. از بخش [Releases](https://github.com/cubepy/CubePilot/releases/latest) بگیرید. هنوز بتاست: برای استفادهٔ روزمره پایدار است ولی آزمایش گسترده نشده. برای باخبر شدن از نسخهٔ بعدی روی Watch 👁 یا Star ⭐ بزنید.
 
 ---
 
@@ -134,9 +134,15 @@ Passphrase · نگهداری کلیدها در Secure Storage سیستم‌عا�
 </details>
 
 <details>
-<summary><b>Kubernetes</b> — <sub>در برنامه، v0.4.0</sub></summary>
+<summary><b>Kubernetes</b> — <code>v0.1.8</code></summary>
 
-Pods، Deployments، Services، Namespaces، ConfigMaps و Secrets · لاگ · ترمینال exec
+Podها، Deploymentها، Serviceها، ConfigMapها و Secretها · یک Namespace یا همه ·
+لاگ Pod و Shell داخل آن · rollout restart و تغییر تعداد replica. از طریق همان
+سروری که بهش وصلید و با kubeconfig خودش اجرا می‌شود، پس هیچ credential کلاستری
+روی گوشی نمی‌رود.
+
+<sub>Secretها فقط با نام و نوع فهرست می‌شوند — CubePilot هیچ‌وقت محتوایشان را
+نمی‌خواند.</sub>
 </details>
 
 <details>
