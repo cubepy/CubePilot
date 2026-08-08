@@ -11,9 +11,11 @@ CubePilot is built by [CubePy](https://cubesystem.top) alongside the rest of
 the Cube ecosystem. It is not a business on its own and doesn't need to pay
 for itself.
 
-There is an optional
-[crypto donation link](../README.md#️-support-the-project) for anyone who
-wants to chip in toward hosting, signing certificates and test devices.
+There are two optional
+[donation links](../README.md#️-support-the-project) for anyone who wants to
+chip in toward hosting, signing certificates and test devices: crypto, or
+[Donofa](https://donofa.com/Cube/) for a rial card-to-card payment from inside
+Iran, where the crypto route is the awkward one.
 Donating changes nothing about the app: there is no supporter tier, no badge,
 and no feature that donors get and you don't. Starring the repo and filing
 good bug reports help just as much.
