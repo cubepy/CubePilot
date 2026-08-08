@@ -12,6 +12,15 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.9] - 2026-08-08
+
+### Added
+- **Docker images, networks and volumes**, each with a delete button. Images
+  show their size and age, and a dangling one is shown dimmed by its id.
+- **Live CPU, memory and network per running container**, fetched with the
+  list. A daemon that will not report stats costs you the numbers, not the
+  screen, and a container with no reading yet shows nothing rather than 0%.
+
 ## [0.1.8] - 2026-08-08
 
 ### Added
