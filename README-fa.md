@@ -140,9 +140,11 @@ Pods، Deployments، Services، Namespaces، ConfigMaps و Secrets · لاگ · 
 </details>
 
 <details>
-<summary><b>Log Viewer</b> — <sub>در برنامه، v0.4.0</sub></summary>
+<summary><b>Log Viewer</b> — <code>v0.1.7</code></summary>
 
-خروجی لاگ با رنگ‌بندی · جستجو · Regex · بوکمارک · Export
+ژورنال systemd، فایل‌های معمول در `/var/log`، `dmesg` یا هر مسیری که بنویسید ·
+خواندن انتهای فایل یا دنبال کردن زنده · رنگ‌بندی خطوط بر اساس شدت · فیلتر ساده
+یا با عبارت باقاعده · بوکمارک · خروجی از آنچه نمایش داده شده
 </details>
 
 <details>
