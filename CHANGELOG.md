@@ -12,6 +12,16 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.11] - 2026-08-08
+
+### Added
+- **Smart groups** — rule-based views over the server list (name, host, tag,
+  folder, user, port, favourite, pinned, last used within N days), matching
+  all rules or any of them, with a live count of what they match while you
+  edit. Favourites and Recent are built in and need no setup.
+- **Connect all** — with a group selected, one button opens every server
+  listed under it, sequentially, reporting how many of how many opened.
+
 ## [0.1.10] - 2026-08-08
 
 ### Added
