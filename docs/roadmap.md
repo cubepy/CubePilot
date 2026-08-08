@@ -71,7 +71,9 @@ CubePilot's signature feature, and the reason the app exists.
 - [x] Smart groups: rule-based views over the server list, with favourites
       and recent built in, and one button to connect everything listed
 - [x] Glass theme
-- [ ] Animation and performance pass targeting 120 fps on supported displays
+- [x] Performance pass: one shared blur per screen rather than one per card,
+      terminal output no longer capped at 60 Hz, charts and terminals on their
+      own paint layers
 
 ## v1.0.0 — Platform integration
 

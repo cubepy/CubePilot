@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.11 is out** — smart groups, and connecting a whole group at once, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.12 is out** — a performance pass, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
