@@ -68,7 +68,8 @@ CubePilot's signature feature, and the reason the app exists.
 
 - [x] Live monitoring: CPU, RAM, disk, network throughput, temperature,
       uptime and load average on the dashboard, each with a chart
-- [ ] Smart groups and workspaces
+- [x] Smart groups: rule-based views over the server list, with favourites
+      and recent built in, and one button to connect everything listed
 - [x] Glass theme
 - [ ] Animation and performance pass targeting 120 fps on supported displays
 

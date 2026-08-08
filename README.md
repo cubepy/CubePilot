@@ -19,7 +19,7 @@ A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kuber
 
 ---
 
-> **v0.1.10 is out** — bandwidth, temperature and charts on the dashboard, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
+> **v0.1.11 is out** — smart groups, and connecting a whole group at once, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
 
 ---
 
@@ -69,13 +69,14 @@ professional colour schemes · font size selection
 </details>
 
 <details>
-<summary><b>Server management</b> — <code>v0.1.0</code></summary>
+<summary><b>Server management</b> — <code>v0.1.0</code>, <code>v0.1.11</code></summary>
 
-Folders · favorites · pinning · search · tags · per-server HTTP and SOCKS5
-proxy, for hosts you cannot reach directly
+Folders · favorites · pinning · search · tags · smart groups that collect
+servers by rule rather than by filing them · connect a whole group at once ·
+per-server HTTP and SOCKS5 proxy, for hosts you cannot reach directly
 
 <sub>Planned: live server cards showing OS, country, ping, CPU, RAM, disk and
-uptime · workspaces · smart groups</sub>
+uptime</sub>
 </details>
 
 <details>
