@@ -142,9 +142,11 @@ terminal
 </details>
 
 <details>
-<summary><b>Log viewer</b> — <sub>planned, v0.4.0</sub></summary>
+<summary><b>Log viewer</b> — <code>v0.1.7</code></summary>
 
-Syntax-colored log output · search · regex · bookmarks · export
+The systemd journal, the usual files under `/var/log`, `dmesg`, or any path you
+type · read the tail or follow it live · lines coloured by severity · filter
+literally or with a regular expression · bookmarks · export what is on screen
 </details>
 
 <details>
