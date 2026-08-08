@@ -12,6 +12,23 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.16] - 2026-08-08
+
+### Fixed
+- Deleting a server asked nothing and cleaned up nothing: its open session
+  kept running with its tab and notification, and its saved tunnels stayed in
+  the vault unstartable. It now confirms first, naming how many sessions,
+  tunnels and dependent jump hosts are attached to that server, and closes
+  and deletes what belonged to it.
+- Deleting a private key asked nothing either — one tap, no confirmation, for
+  the one thing that cannot be recovered. It now confirms, and says how many
+  servers authenticate with it.
+- A tunnel whose session closed stayed listed as running with its local port
+  still bound, which made starting a replacement on the same port fail.
+  Sessions now stop the tunnels they carry.
+- The dashboard's tunnel counter was a hardcoded zero and had been since the
+  first release. All three counters now also open the screen they count.
+
 ## [0.1.15] - 2026-08-08
 
 ### Added
