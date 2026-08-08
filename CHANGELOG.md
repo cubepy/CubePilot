@@ -12,6 +12,16 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.14] - 2026-08-08
+
+### Added
+- **Material You** — on Android 12 and later, CubePilot can take its accent
+  colours from the system wallpaper palette. Off by default, and a switch
+  under the theme list rather than a fifth theme, since it applies to
+  whichever theme is chosen. Only the accents follow the wallpaper: the
+  surfaces stay as they are so a dark theme stays dark and OLED stays black,
+  and error red stays CubePilot's in every theme.
+
 ## [0.1.13] - 2026-08-08
 
 ### Fixed
