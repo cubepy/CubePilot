@@ -58,8 +58,8 @@ CubePilot's signature feature, and the reason the app exists.
 
 - [x] Docker: containers, start, stop, restart, logs, shell, delete
 - [ ] Docker: images, networks, volumes, stats
-- [ ] Kubernetes: pods, deployments, services, namespaces, ConfigMaps,
-      secrets, logs, exec terminal
+- [x] Kubernetes: pods, deployments, services, namespaces, ConfigMaps and
+      secrets, with logs, an exec shell, rollout restart and scaling
 - [x] Log viewer: the journal, files under /var/log, dmesg or any path,
       read once or followed live, with severity colouring, literal and regex
       filtering, bookmarks and export

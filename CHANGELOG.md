@@ -10,7 +10,17 @@ Every entry corresponds to a build published on the
 
 ## [Unreleased]
 
-Work in progress toward `v0.2.0` is tracked in [docs/roadmap.md](docs/roadmap.md).
+Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
+
+## [0.1.8] - 2026-08-08
+
+### Added
+- **Kubernetes** — pods, deployments, services, ConfigMaps and Secrets for
+  whatever cluster the connected server can reach, in one namespace or all of
+  them. Pod logs, a shell inside a pod, delete a pod, rollout restart and
+  scale a deployment. `kubectl` runs on the server, using the kubeconfig it
+  already has, so no cluster credential is kept on the phone. Secrets are
+  listed by name and type only — their values are never requested.
 
 ## [0.1.7] - 2026-08-08
 
