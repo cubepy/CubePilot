@@ -69,8 +69,10 @@ demand is how we order this kind of work.
 
 ## Does it support jump hosts / bastions?
 
-Not in the first release. It is on the
-[under consideration](roadmap.md#under-consideration) list.
+Yes. Edit a server, set **Connect through** to another saved server, and
+CubePilot dials that one first and runs this connection through it. Chains of
+up to four work. The traffic stays encrypted end to end — the bastion carries
+bytes it cannot read.
 
 ## What key types does the key manager support?
 
@@ -105,11 +107,11 @@ No. It is stored in the same encrypted local database as everything else.
 Yes. Timeline recording is configurable per category and per server, and can
 be disabled entirely in settings.
 
-## Why does Windows warn me when I run the installer?
+## Why does Windows warn me when I run it?
 
-Because SmartScreen doesn't recognize a new publisher yet. See
+The executable is unsigned, so SmartScreen has no reputation to go on. See
 [installation.md](installation.md#windows) for what to check before you click
-through it.
+through it. A signing certificate is something donations would go toward.
 
 ## Why isn't CubePilot on the Play Store or the Microsoft Store?
 
@@ -117,10 +119,23 @@ Store distribution may come later. For now, GitHub Releases is the only
 official channel — anything calling itself CubePilot anywhere else is not
 ours.
 
-## When is the first release?
+## Is it finished?
 
-When it is good enough. Watch 👁 the repository and you'll be notified the
-moment it lands. Progress is tracked in [roadmap.md](roadmap.md).
+No — it is a beta, and says so. It is stable enough for daily use and is what
+we use ourselves, but it has not been through many hands yet. Releases come
+often; watch 👁 the repository to hear about them, and see
+[roadmap.md](roadmap.md) for what is built and what is not.
+
+## Will there be cloud sync?
+
+There is no CubePilot account and no sync server today, and there will never be
+one that can read your servers or keys. If sync is ever built it will be
+end-to-end encrypted on your device, with the key never leaving it — a server
+that holds an opaque blob it cannot open. Anything less would contradict the
+reason the vault is encrypted in the first place.
+
+Until then, moving between devices is **Settings → Backup → Export** and
+**Import**, which is a file you hold rather than a service you trust.
 
 ## I found a bug / I have an idea
 

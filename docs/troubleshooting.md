@@ -2,10 +2,9 @@
 
 Common problems and what to check before opening an issue.
 
-> CubePilot has not shipped its first public build yet, so this page starts
-> with the problems we expect rather than ones users have reported. It will
-> grow with real cases — if something here didn't help you, that is worth an
-> [issue](https://github.com/cubepy/CubePilot/issues/new/choose).
+> If something here didn't help you, that is worth an
+> [issue](https://github.com/cubepy/CubePilot/issues/new/choose). This page
+> grows from real cases.
 
 ---
 
@@ -120,8 +119,14 @@ start over — or restore from a backup whose passphrase you do remember.
 
 ### The session dies when the app goes to the background
 
-Battery optimization is killing the process. Exclude CubePilot in
-**Android Settings → Apps → CubePilot → Battery → Unrestricted**.
+CubePilot runs a foreground service — the notification you see while a session
+is open — precisely to stop this. If sessions still die, the manufacturer's
+battery manager is killing the process anyway; Xiaomi, Samsung, Huawei and
+OnePlus are the usual ones. Exclude CubePilot in **Android Settings → Apps →
+CubePilot → Battery → Unrestricted**.
+
+Note that a dropped session is not necessarily a killed app: CubePilot
+reconnects by itself and says so in the terminal, keeping your scrollback.
 
 ### The app isn't installing
 
@@ -133,23 +138,68 @@ browser or file manager, not CubePilot.
 
 ## Windows
 
-### SmartScreen blocks the installer
+### SmartScreen blocks the app
 
-Expected for a new publisher. Verify the checksum first, then
-**More info → Run anyway**. See
+Expected: the executable is unsigned, and an unsigned binary has no reputation
+with Microsoft. Verify the checksum first, then **More info → Run anyway**. See
 [installation.md](installation.md#windows).
 
-### The window is transparent, ugly, or Mica isn't showing
+### The app starts but my servers are gone after updating
 
-Mica needs Windows 11. On Windows 10 CubePilot falls back to a solid surface,
-which is intended. If transparency looks wrong on Windows 11, check that
-**Settings → Personalization → Colors → Transparency effects** is on.
+The Windows build is portable, but its data is not stored beside the
+executable — it lives in `%APPDATA%\top.cubesystem\cubepilot`. Replacing the
+program folder never touches it. If servers really did vanish, it means the app
+is running as a different Windows user than the one that created them.
+
+### The Glass theme looks flat on Windows
+
+The Glass theme blurs what is behind each card *inside* the app; it is not
+Windows 11 Mica and does not sample your wallpaper. Mica, Acrylic and a tray
+icon are on the [roadmap](roadmap.md), not in the app yet.
 
 ### Antivirus quarantines the app
 
 Report it as a false positive to your vendor, and
 [tell us](https://github.com/cubepy/CubePilot/issues/new/choose) which product
 and which detection name — we can submit it for review.
+
+---
+
+## Docker, Kubernetes and logs
+
+### "docker: command not found" or a permission error on the socket
+
+These screens run the real `docker` and `kubectl` on the server you are
+connected to, as the user you connected as. If the command is missing or your
+user is not in the `docker` group, CubePilot says so rather than pretending —
+the fix is on the server, not in the app.
+
+### Kubernetes says there is no kubeconfig
+
+`kubectl` finds its config in the home directory of the user you connected as.
+Connecting as a different user than the one that set the cluster up is the
+usual cause.
+
+### A log file will not open
+
+Most logs under `/var/log` are readable only by root or by a group your user
+may not be in. `Permission denied` here is the server's answer, not a bug.
+
+---
+
+## Jump hosts
+
+### "The jump host … no longer exists"
+
+The server it was set to connect through has been deleted. Edit the server and
+pick another one, or set it back to **Directly**. CubePilot refuses to connect
+straight to the target instead, because that would send the traffic somewhere
+you never agreed to send it.
+
+### "These jump hosts point at each other in a loop"
+
+Two servers are each set to connect through the other, so there is no way in.
+Edit either one.
 
 ---
 
