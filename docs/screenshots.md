@@ -16,7 +16,10 @@ addresses all come from the documentation ranges reserved by
 `198.51.100.x`, `192.0.2.x`, `*.example.com`. Those can never route to
 anything real.
 
-Grab `cubepilot-android-demo` from the latest CI run's artifacts. It
+The demo APK is not built on every commit — it is a second full compile,
+and paying for one per push is how a month of CI minutes disappears. Run
+the **CI** workflow manually with **demo** ticked, then grab
+`cubepilot-android-demo` from that run's artifacts. It
 installs as a separate app — package `top.cubesystem.cubepilot.demo`,
 labelled **CubePilot Demo** — so it sits beside the real app rather than
 replacing it. Install it, take the shots, uninstall it; the real app and
