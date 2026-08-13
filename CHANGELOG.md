@@ -12,6 +12,86 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.1.17] - 2026-08-13
+
+No new features. Eighteen rounds of one question asked over and over: does
+this screen tell the truth, and does this button do what it says?
+
+### Fixed — things that could lose something
+- Two saves landing at once could destroy the whole vault. Every save wrote
+  the store to one temporary file and renamed it into place, with nothing
+  keeping two of them apart — and the timeline records an entry, without
+  waiting for it, on every command, connection and file transfer. When they
+  overlapped, what ended up as the vault was half a JSON document, which the
+  next launch could only read as corrupt: set aside, start empty. Saves now
+  run one at a time.
+- Restoring a backup asked nothing and replaced everything — every server,
+  key, tunnel, saved command, group and the whole timeline, including private
+  keys that exist nowhere else. It now decrypts first and then asks, showing
+  what is on the device, what is in the file, and that keys do not come back.
+- When the vault could not be read, the app said nothing: it set the file
+  aside and opened empty, which is indistinguishable from having thrown your
+  servers away. It now says what happened and where the old file is. If the
+  store cannot be opened at all, it says that too.
+- Installing an older build over a newer one would have dropped everything
+  the newer one added, on its first save. Unknown fields are carried through
+  untouched now.
+
+### Fixed — things that ran on the wrong machine
+- Docker and Kubernetes actions re-resolved the active session at the moment
+  they ran, rather than using the one the list came from. Containers have
+  random ids so those mostly missed; volumes and networks are addressed by
+  name, and `db_data` exists on staging and on production. Actions are pinned
+  to the list's session now, and both pages finally say which machine they
+  are showing.
+- The command library fires at whichever session is active and said only
+  "Ran X" afterwards. It names the machine before you tap anything now.
+- A log follow survived switching servers, printing one server's lines into a
+  page that belonged to another. The log export named the wrong server in its
+  header for the same reason.
+
+### Fixed — SFTP
+- After a reconnect the file browser was talking to a socket that no longer
+  existed, for every listing, upload and delete, until the app was restarted.
+- Rename, delete, mkdir and chmod returned quietly when the session was gone:
+  renaming a file on a closed session looked exactly like success.
+- Two panes showing the same session were the same pane.
+- Downloads and uploads held the whole file in memory, and downloads asked
+  where to save only after transferring. Both stream now, and an upload that
+  would replace a file asks first.
+
+### Fixed — security
+- The app lock counted nothing: a four-digit PIN is ten thousand guesses and
+  none of them cost anything. Five wrong now starts a wait that doubles.
+- A vault saying the lock is on with no PIN stored no longer locks you out of
+  your own data permanently.
+- The CSV timeline export was executable: spreadsheets read a field starting
+  with `=` as a formula, and those fields hold whatever a server printed.
+- A changed host key showed only the new fingerprint — not the old one it did
+  not match. Fingerprints now print the way `ssh` prints them.
+- Closing a session takes its tunnels with it, and says so first.
+- A connection failure reported the phone's own ephemeral port where a reader
+  expects the port that was dialled, because that is what Dart's
+  SocketException text contains. Failures now name what was being reached —
+  the server, the proxy in front of it, or a named jump host — and say why in
+  words rather than an errno.
+
+### Better
+- Selecting text works where the text is: a bar appears over the terminal the
+  moment something is selected. Right-click copies a selection or pastes when
+  there is none.
+- Shell prompts are coloured — the one line the highlighter could never touch,
+  and the only landmark when scrolling back through a long session.
+- Imported keys carry a fingerprint and a public key, derived from the key
+  itself, so they can be told apart and pasted into `authorized_keys`.
+- A jump-host loop is caught when the server is saved, not weeks later.
+- Deleting a note or a bookmarked timeline entry asks first.
+- Launch is about two and a half seconds shorter, and the system splash hands
+  over to the app's own without the logo jumping.
+- A per-server "connect outside the VPN" switch on Android. The platform half
+  is not in this build, and a session set to use it says so rather than
+  pretending.
+
 ## [0.1.16] - 2026-08-08
 
 ### Fixed

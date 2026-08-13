@@ -21,8 +21,17 @@ be CubePilot is not.
 1. Open the [latest release](https://github.com/cubepy/CubePilot/releases/latest)
    on your phone and download the `.apk`.
 
-   One APK covers every device — it carries both arm64 and armeabi-v7a, so
-   there is nothing to choose between.
+   Releases carry one APK per processor type, because a single universal
+   file is nearly three times the size for no benefit to anyone:
+
+   | File | For |
+   |---|---|
+   | `…-arm64-v8a.apk` | **Almost every phone.** Anything sold since roughly 2016. Start here. |
+   | `…-armeabi-v7a.apk` | Older or very cheap 32-bit phones. Use this only if the arm64 file refuses to install. |
+   | `…-x86_64.apk` | Emulators and Chromebooks. Not a phone. |
+
+   If the wrong one is picked, Android refuses it at install time with
+   "App not installed" rather than installing something broken.
 
 2. Tap the downloaded file. Android will ask you to allow installing apps from
    this source; grant it for your browser or file manager, then tap the file
