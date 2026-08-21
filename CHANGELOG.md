@@ -12,6 +12,50 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.2.1] - 2026-08-21
+
+Your servers on the home screen, a terminal that floats over other apps, and
+the version the app shows is now the version it is.
+
+### Added
+- A home-screen widget: the servers you use, one tap from the launcher —
+  pinned first, then favourites, then most recently connected. It holds a
+  name and an internal id and nothing else: no host, no username, no port,
+  no key, no password, so nothing in it can reach a machine. With the app
+  lock on it lists nothing at all.
+- A Quick Settings tile, landing on the dashboard with quick connect
+  focused. It connects to nothing on its own on purpose — a tile can be
+  tapped over a lock screen.
+- A floating terminal: shrink a session into a small window that stays on
+  top of other apps. Output only, no input, because a floating window has no
+  keyboard and a stray tap that reached a root shell would be a bad way to
+  find that out.
+- "Connect outside the VPN" now does something. The setting has existed
+  since v0.2 and the Android side of it was never written, so it answered
+  "not supported" on every device.
+- The version, faintly, beside the Dashboard title — the first question of
+  every bug report, previously four taps deep in Settings.
+
+### Fixed
+- Shell prompts are coloured, all of them. v0.2 coloured the first prompt of
+  a session and no others: a prompt is alone only once, and from the second
+  one on it arrives inside a complete line with the command you just typed
+  after it.
+- Every filled button was under the contrast standard. White on the brand
+  blue was 4.42:1 and on the brand purple 4.23:1, against WCAG AA's 4.5:1.
+  Both colours are one step deeper now.
+- Tapping a row in Settings looked like nothing happened — the ripple was
+  painted behind the card it was meant to appear on.
+- About said 0.2.0 in every build since 0.1.0, and called itself a
+  pre-release regardless of how the release was published. Both come from
+  one constant now, checked against `pubspec.yaml` by a test.
+
+### Changed
+- Every screen is run through Flutter's accessibility guidelines on every
+  build: tap-target size, labelled controls, text contrast in both themes,
+  right-to-left layout and the largest system font. The two fixes above are
+  what the first run found.
+
 ## [0.2.0] - 2026-08-13
 
 Two things found by using v0.1.17 rather than by reading it.
