@@ -12,7 +12,7 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
-## [0.1] - 2026-08-13
+## [0.2.0] - 2026-08-13
 
 Two things found by using v0.1.17 rather than by reading it.
 
