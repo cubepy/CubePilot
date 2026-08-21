@@ -12,10 +12,22 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
-## [0.1.17] - 2026-08-13
+## [0.2.0] - 2026-08-13
+
+The version jumps from 0.1.16 to 0.2.0. Nothing dramatic happened — the
+0.1.x line had simply run long enough that 0.1.9 and 0.1.17 were being read
+in the wrong order.
 
 No new features. Eighteen rounds of one question asked over and over: does
 this screen tell the truth, and does this button do what it says?
+
+### Fixed — found by using it
+- The last server in a full list sat behind the floating Add button and could
+  not be tapped. Every list with a button over it now leaves room for it.
+- Shell prompts are coloured — this time actually. The colouring shipped in
+  the previous build and never fired on a real server: bash turns on
+  bracketed-paste mode before printing a prompt, and anything arriving with
+  an escape in front of it was left alone as already-coloured output.
 
 ### Fixed — things that could lose something
 - Two saves landing at once could destroy the whole vault. Every save wrote
