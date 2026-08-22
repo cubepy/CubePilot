@@ -169,10 +169,10 @@ Load Average، Uptime، نام میزبان و توزیع لینوکس — هر�
 | --- | --- |
 | اعلان Session — `v0.1.0` | Fluent Design |
 | Material You با Dynamic Color | سطوح Mica و Acrylic |
-| ویجت صفحه اصلی | آیکون Tray |
-| Quick Settings Tile | میان‌بر سراسری |
-| ترمینال شناور | Multi Window |
-| پشتیبانی از Split Screen | پشتیبانی از چند مانیتور |
+| Quick Settings Tile | آیکون Tray |
+| ترمینال شناور | میان‌بر سراسری |
+| پشتیبانی از Split Screen | Multi Window |
+| | پشتیبانی از چند مانیتور |
 
 ## 🎨 طراحی
 

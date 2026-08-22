@@ -18,11 +18,6 @@ Your servers on the home screen, a terminal that floats over other apps, and
 the version the app shows is now the version it is.
 
 ### Added
-- A home-screen widget: the servers you use, one tap from the launcher —
-  pinned first, then favourites, then most recently connected. It holds a
-  name and an internal id and nothing else: no host, no username, no port,
-  no key, no password, so nothing in it can reach a machine. With the app
-  lock on it lists nothing at all.
 - A Quick Settings tile, landing on the dashboard with quick connect
   focused. It connects to nothing on its own on purpose — a tile can be
   tapped over a lock screen.

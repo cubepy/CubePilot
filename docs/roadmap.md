@@ -79,9 +79,8 @@ CubePilot's signature feature, and the reason the app exists.
 
 - [x] Android: Material You dynamic colour, session notification,
       split-screen
-- [x] Android: home-screen widget listing the servers you actually use,
-      Quick Settings tile, floating terminal that keeps a session on screen
-      over other apps
+- [x] Android: Quick Settings tile, floating terminal that keeps a session
+      on screen over other apps
 - [ ] Windows: Fluent Design, Mica and Acrylic, tray icon, global shortcut,
       multi-window, multi-monitor
 - [x] Accessibility: labels on icon-only controls, one announcement per

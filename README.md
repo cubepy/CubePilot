@@ -171,10 +171,10 @@ milestone.
 | --- | --- |
 | Session notification — `v0.1.0` | Fluent Design |
 | Material You with dynamic color | Mica and Acrylic surfaces |
-| Home-screen widget | Tray icon |
-| Quick Settings tile | Global shortcut |
-| Floating terminal | Multi-window |
-| Split-screen support | Multi-monitor support |
+| Quick Settings tile | Tray icon |
+| Floating terminal | Global shortcut |
+| Split-screen support | Multi-window |
+| | Multi-monitor support |
 
 ## 🎨 Design
 
