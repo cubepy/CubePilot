@@ -12,6 +12,33 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.3.0] - 2026-08-30
+
+Windows is back, and the home-screen widget is gone.
+
+### Added
+- A Windows build again, published beside the Android ones for the first
+  time since v0.1.16. Unzip and run — nothing is installed. It is not
+  code-signed, so SmartScreen warns on first run until the build earns
+  reputation or there is a certificate to sign it with.
+
+### Removed
+- The home-screen widget, which shipped in v0.2.1. It showed a list of
+  servers you already have one tap away, took three rounds of fixes to show
+  correctly, and was still wrong at the end of them. It was also the only
+  thing CubePilot ever wrote outside the encrypted vault; there is nothing
+  outside it again. The Quick Settings tile and the floating terminal stay.
+
+### Fixed
+- Launching from a shortcut could skip the app lock. The stored settings —
+  theme, language, and the lock — were applied by the splash screen and only
+  while it was still on screen, so a link that routed away first took the
+  lock with it.
+- The app called itself `cubepilot`, lowercase, under its own icon and in
+  every list Android sorts by name — since v0.1.0. The package name was
+  being used as the app's label.
+- A server could be reported as deleted while the vault was still opening.
+
 ## [0.2.1] - 2026-08-21
 
 Your servers on the home screen, a terminal that floats over other apps, and
