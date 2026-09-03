@@ -12,6 +12,25 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.4.0] - 2026-08-30
+
+Ask a server everything at once, instead of typing it.
+
+### Added
+- Health checks: failed services, disk space, load per core, listening
+  ports, expiring certificates, a pending reboot and recent journal errors —
+  asked in one round trip and answered on one screen. Every check only
+  reads; nothing on that screen changes anything on the server. A check that
+  could not run comes back as unknown rather than as a pass, because "I
+  could not look" and "I looked and it is fine" are different sentences.
+  Each run files itself on the server's timeline.
+- Load is judged per core rather than reported raw. A one-minute load of 4
+  is a busy afternoon on sixteen cores and a queue forming on two; both
+  numbers are shown so the judgement can be checked.
+- The server list now says when a connection will go outside the VPN. The
+  row already showed a proxy or a jump host and stayed silent about the one
+  route that is invisible everywhere else.
+
 ## [0.3.0] - 2026-08-30
 
 Windows is back, and the home-screen widget is gone.

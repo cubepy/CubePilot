@@ -68,6 +68,9 @@ CubePilot's signature feature, and the reason the app exists.
 
 - [x] Live monitoring: CPU, RAM, disk, network throughput, temperature,
       uptime and load average on the dashboard, each with a chart
+- [x] Health checks: failed services, full disks, load per core, listening
+      ports, expiring certificates, a pending reboot and recent journal
+      errors — asked in one round trip, read-only, filed on the timeline
 - [x] Smart groups: rule-based views over the server list, with favourites
       and recent built in, and one button to connect everything listed
 - [x] Glass theme
