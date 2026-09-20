@@ -8,7 +8,7 @@
 
 [![Status](https://img.shields.io/badge/status-beta-8B5CF6?style=for-the-badge)](docs/roadmap.md)
 [![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=3B6EF6&label=latest)](https://github.com/cubepy/CubePilot/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/cubepy/CubePilot/total?style=for-the-badge&color=22D3EE)](https://github.com/cubepy/CubePilot/releases)
+[![Downloads](https://img.shields.io/github/downloads/cubepy/CubePilot/total?style=for-the-badge&color=22D3EE)](docs/downloads.md)
 [![Platforms](https://img.shields.io/badge/platforms-Android%20%7C%20Windows-3B6EF6?style=for-the-badge)](docs/installation.md)
 [![License](https://img.shields.io/badge/license-Freeware%20EULA-8B5CF6?style=for-the-badge)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/cubepy/CubePilot?style=for-the-badge&color=22D3EE)](https://github.com/cubepy/CubePilot/stargazers)

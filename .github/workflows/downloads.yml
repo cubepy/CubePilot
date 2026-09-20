@@ -1,0 +1,56 @@
+name: Downloads
+
+# GitHub counts downloads and keeps no history: the API says how many times
+# an asset has been fetched so far, and nothing about when. There is no
+# export and no backfill, so the only way to have a chart of the past is to
+# have started writing the numbers down. This writes them down.
+#
+# This is the one workflow in the public repository, and it is here rather
+# than in the private one for two reasons: it needs no source, and a public
+# repository's Actions minutes are free, so it costs nothing to run for
+# years. Nothing is built here — the binaries still cross over from the
+# private repository, as they always have.
+
+on:
+  schedule:
+    # Once a day, a few minutes off the hour. Everything scheduled at :00 is
+    # queued behind everything else scheduled at :00.
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+# One at a time. Two runs committing to the same file would race.
+concurrency:
+  group: downloads
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read the counts and redraw the chart
+        env:
+          # Read-only against this repository's own releases. The default
+          # token is enough; nothing here touches the private repository.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/downloads.py
+
+      - name: Commit, if anything changed
+        run: |
+          set -euo pipefail
+          git config user.name "cubepy"
+          git config user.email "r8rs@yahoo.com"
+          git add docs/downloads.csv assets/downloads.svg
+          # Nothing to say on a day when nobody downloaded anything, and an
+          # empty commit every morning would bury the real history.
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          TOTAL=$(tail -n1 docs/downloads.csv | cut -d, -f2)
+          git commit -m "Downloads: $TOTAL total as of $(date -u +%F)"
+          git push
