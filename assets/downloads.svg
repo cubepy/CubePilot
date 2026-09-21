@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="90" viewBox="0 0 760 90" role="img" aria-label="Not enough data yet"><text x="380" y="50" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#8b93a7">Collecting — a chart needs more than one day of numbers.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" viewBox="0 0 760 260" role="img" aria-label="CubePilot downloads over time. Latest total 13.">
+<style>text{font-family:system-ui,-apple-system,Segoe UI,sans-serif}</style>
+<line x1="46" y1="230.0" x2="746" y2="230.0" stroke="#8b93a7" stroke-opacity="0.18" stroke-width="1"/>
+<text x="38" y="234.0" text-anchor="end" font-size="11" fill="#8b93a7" fill-opacity="0.75">0</text>
+<line x1="46" y1="177.0" x2="746" y2="177.0" stroke="#8b93a7" stroke-opacity="0.18" stroke-width="1"/>
+<text x="38" y="181.0" text-anchor="end" font-size="11" fill="#8b93a7" fill-opacity="0.75">4</text>
+<line x1="46" y1="124.0" x2="746" y2="124.0" stroke="#8b93a7" stroke-opacity="0.18" stroke-width="1"/>
+<text x="38" y="128.0" text-anchor="end" font-size="11" fill="#8b93a7" fill-opacity="0.75">8</text>
+<line x1="46" y1="71.0" x2="746" y2="71.0" stroke="#8b93a7" stroke-opacity="0.18" stroke-width="1"/>
+<text x="38" y="75.0" text-anchor="end" font-size="11" fill="#8b93a7" fill-opacity="0.75">12</text>
+<line x1="46" y1="18.0" x2="746" y2="18.0" stroke="#8b93a7" stroke-opacity="0.18" stroke-width="1"/>
+<text x="38" y="22.0" text-anchor="end" font-size="11" fill="#8b93a7" fill-opacity="0.75">16</text>
+<polyline points="46.0,137.2 746.0,124.0" fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="46.0,163.8 746.0,163.8" fill="none" stroke="#7F50EE" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="46.0,71.0 746.0,57.8" fill="none" stroke="#3767E9" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="746.0" cy="57.8" r="3.5" fill="#3767E9"/>
+<text x="46" y="250" font-size="11" fill="#8b93a7" fill-opacity="0.75">2026-09-20</text>
+<text x="746" y="250" text-anchor="end" font-size="11" fill="#8b93a7" fill-opacity="0.75">2026-09-21</text>
+<rect x="46" y="240" width="10" height="3" rx="1.5" fill="#3767E9"/>
+<text x="61" y="246" font-size="11" fill="#8b93a7">Total 13</text>
+<rect x="127.6" y="240" width="10" height="3" rx="1.5" fill="#22D3EE"/>
+<text x="142.6" y="246" font-size="11" fill="#8b93a7">Android 8</text>
+<rect x="216.39999999999998" y="240" width="10" height="3" rx="1.5" fill="#7F50EE"/>
+<text x="231.39999999999998" y="246" font-size="11" fill="#8b93a7">Windows 5</text>
+</svg>
