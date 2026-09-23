@@ -193,6 +193,14 @@ Step-by-step instructions, including how to install an APK outside the Play Stor
 
 > Download CubePilot only from this repository's Releases page. Builds from anywhere else are not ours and are not safe to trust with your SSH keys.
 
+<div align="center">
+
+<img src="assets/downloads.svg" alt="CubePilot downloads over time" width="760">
+
+<sub>Recorded daily since 20 September 2026 — GitHub keeps no download history, so this starts the day we began writing the numbers down. <a href="docs/downloads.md">How this is counted</a></sub>
+
+</div>
+
 ## 📸 Screenshots
 
 <table>

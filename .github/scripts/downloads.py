@@ -118,8 +118,11 @@ def upsert(rows, today, counts):
 
 # --------------------------------------------------------------------- chart
 
-W, H = 760, 260
-PAD_L, PAD_R, PAD_T, PAD_B = 46, 14, 18, 30
+W, H = 760, 270
+# The top padding holds the legend and the bottom holds the dates. They used
+# to share the bottom, where the legend's first entry was drawn straight over
+# the start date and the two were unreadable on top of each other.
+PAD_L, PAD_R, PAD_T, PAD_B = 46, 14, 36, 26
 
 # Colours that read on GitHub's light and dark themes alike. No background is
 # painted: a chart with a white panel is a white rectangle on a dark page.
@@ -214,17 +217,18 @@ def render(rows, path):
         f'<circle cx="{x_at(len(rows) - 1):.1f}" cy="{last_y:.1f}" r="3.5" '
         f'fill="{TOTAL}"/>')
 
-    # First and last dates only. Every date turns the axis into a smear.
+    # First and last dates only, on their own line. Every date turns the
+    # axis into a smear.
     parts.append(
-        f'<text x="{PAD_L}" y="{H - 10}" font-size="11" fill="{INK}" '
+        f'<text x="{PAD_L}" y="{H - 8}" font-size="11" fill="{INK}" '
         f'fill-opacity="0.75">{esc(rows[0]["date"])}</text>')
     parts.append(
-        f'<text x="{W - PAD_R}" y="{H - 10}" text-anchor="end" '
+        f'<text x="{W - PAD_R}" y="{H - 8}" text-anchor="end" '
         f'font-size="11" fill="{INK}" fill-opacity="0.75">'
         f'{esc(rows[-1]["date"])}</text>')
 
-    # Legend, with the current numbers in it so the chart is readable as a
-    # single still image rather than needing the axis to be decoded.
+    # Legend along the top, with the current numbers in it so the chart is
+    # readable as a still image rather than needing the axis decoded.
     legend = [
         ("Total", TOTAL, series["total"][-1]),
         ("Android", ANDROID, series["android"][-1]),
@@ -233,12 +237,14 @@ def render(rows, path):
     x = PAD_L
     for label, colour, value in legend:
         parts.append(
-            f'<rect x="{x}" y="{H - 20}" width="10" height="3" rx="1.5" '
+            f'<rect x="{x}" y="14" width="10" height="3" rx="1.5" '
             f'fill="{colour}"/>')
         parts.append(
-            f'<text x="{x + 15}" y="{H - 14}" font-size="11" fill="{INK}">'
+            f'<text x="{x + 15}" y="20" font-size="11" fill="{INK}">'
             f'{label} {value}</text>')
-        x += 24 + 7.2 * (len(label) + len(str(value)) + 1)
+        # Advanced by the text's own width rather than a fixed step, or a
+        # four-digit total runs the next entry over.
+        x += 26 + 6.6 * (len(label) + 1 + len(str(value)))
 
     parts.append("</svg>")
     with open(path, "w", encoding="utf-8") as handle:
