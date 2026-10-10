@@ -4,6 +4,10 @@
 
 <sub>[Static banner](assets/hero.svg)</sub>
 
+<img src="assets/app-demo.gif" alt="Animated CubePilot screenshot tour: dashboard, servers, SSH terminal, SFTP, timeline and tunnels" width="100%">
+
+<sub>18-second tour of real app screenshots; appearance may differ in the latest version. [About the demo](docs/demo.md) · [Static preview](assets/app-demo-preview.png)</sub>
+
 **SSH, files, containers and server health. In your pocket and on your desktop.**
 
 [![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=8B5CF6)](https://github.com/cubepy/CubePilot/releases/latest)

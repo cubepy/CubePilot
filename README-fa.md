@@ -4,6 +4,10 @@
 
 <sub>[بنر ثابت](assets/hero.svg)</sub>
 
+<img src="assets/app-demo.gif" alt="تور متحرک تصاویر واقعی CubePilot: داشبورد، سرورها، ترمینال SSH، فایل‌های SFTP، تایم‌لاین و تونل‌ها" width="100%">
+
+<sub>تور ۱۸ ثانیه‌ای از تصاویر واقعی برنامه؛ ظاهر نسخهٔ جدید ممکن است متفاوت باشد. [دربارهٔ دمو](docs/demo.md) · [پیش‌نمایش ثابت](assets/app-demo-preview.png)</sub>
+
 **ترمینال، فایل‌ها، کانتینرها و سلامت سرور؛ روی اندروید و ویندوز.**
 
 [![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=8B5CF6)](https://github.com/cubepy/CubePilot/releases/latest)
