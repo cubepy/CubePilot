@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="CubePilot — Your servers. One workspace." width="100%">
+<img src="assets/hero.gif" alt="CubePilot — Your servers. One workspace." width="100%">
+
+<sub>[Static banner](assets/hero.svg)</sub>
 
 **SSH, files, containers and server health. In your pocket and on your desktop.**
 

@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="CubePilot — فضای کاری یکپارچه برای سرورهای شما" width="100%">
+<img src="assets/hero.gif" alt="CubePilot — فضای کاری یکپارچه برای سرورهای شما" width="100%">
+
+<sub>[بنر ثابت](assets/hero.svg)</sub>
 
 **ترمینال، فایل‌ها، کانتینرها و سلامت سرور؛ روی اندروید و ویندوز.**
 
