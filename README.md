@@ -4,9 +4,9 @@
 
 <sub>[Static banner](assets/hero.svg)</sub>
 
-<img src="assets/app-demo.gif" alt="Animated CubePilot screenshot tour: dashboard, servers, SSH terminal, SFTP, timeline and tunnels" width="100%">
+<a href="assets/app-demo.mp4"><img src="assets/app-demo.gif" alt="Real CubePilot recording: connect over SSH, run terminal commands, upload and download a file over SFTP" width="420"></a>
 
-<sub>18-second tour of real app screenshots; appearance may differ in the latest version. [About the demo](docs/demo.md) · [Static preview](assets/app-demo-preview.png)</sub>
+<sub>Recorded in CubePilot v0.5.0: real SSH, terminal commands and SFTP upload/download. Pauses trimmed; playback at 3× speed. [Watch MP4](assets/app-demo.mp4) · [Recording details](docs/demo.md) · [Static preview](assets/app-demo-preview.png)</sub>
 
 **SSH, files, containers and server health. In your pocket and on your desktop.**
 

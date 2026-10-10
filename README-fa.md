@@ -4,9 +4,9 @@
 
 <sub>[بنر ثابت](assets/hero.svg)</sub>
 
-<img src="assets/app-demo.gif" alt="تور متحرک تصاویر واقعی CubePilot: داشبورد، سرورها، ترمینال SSH، فایل‌های SFTP، تایم‌لاین و تونل‌ها" width="100%">
+<a href="assets/app-demo.mp4"><img src="assets/app-demo.gif" alt="ضبط واقعی CubePilot: اتصال SSH، اجرای دستور در ترمینال و آپلود و دانلود فایل با SFTP" width="420"></a>
 
-<sub>تور ۱۸ ثانیه‌ای از تصاویر واقعی برنامه؛ ظاهر نسخهٔ جدید ممکن است متفاوت باشد. [دربارهٔ دمو](docs/demo.md) · [پیش‌نمایش ثابت](assets/app-demo-preview.png)</sub>
+<sub>ضبط واقعی نسخهٔ ۰٫۵٫۰: اتصال SSH، اجرای دستور و آپلود و دانلود SFTP. مکث‌ها کوتاه شده‌اند و پخش با سرعت سه‌برابر است. [مشاهدهٔ MP4](assets/app-demo.mp4) · [جزئیات ضبط](docs/demo.md) · [پیش‌نمایش ثابت](assets/app-demo-preview.png)</sub>
 
 **ترمینال، فایل‌ها، کانتینرها و سلامت سرور؛ روی اندروید و ویندوز.**
 
