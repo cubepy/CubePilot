@@ -12,6 +12,21 @@ Every entry corresponds to a build published on the
 
 Work in progress is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## [0.5.0] - 2026-10-10
+
+Keep your work when the connection drops, and reach it faster on both platforms.
+
+## Added
+
+- **Resumable SFTP transfers on Android and Windows.** Uploads and downloads show progress, pause, resume and cancel in Files → File transfers. A broken connection retains the acknowledged prefix; reconnect the session, then press Resume. Transfers continue while navigating within the app. The queue lives for this app launch; restarting the app starts a new queue.
+- **Safer file replacement.** Downloads use an isolated partial file and replace the destination only after completion. Uploads stage separately, check for changes to the source and destination, and retain the original during replacement. A lost final rename reply is reconciled on resume instead of blindly uploading again.
+- **Persistent remote shells with tmux.** Enable “Keep shell alive with tmux” on a saved server. Reopening that server attaches to the same remote environment after a disconnect or app restart. Requires tmux on the server; if absent, the terminal explains that it is starting a regular shell. Closing the tab detaches; typing `exit` ends the remote shell. Multiple tabs for that saved server share its tmux session.
+- **Customizable terminal keys.** Settings → Terminal keys lets you choose keys, drag their order, adjust the row height, or restore the default layout. Preferences are stored in the encrypted vault and included in backups.
+- **Windows system tray and global shortcut.** Right-click the tray icon to show or hide CubePilot, open the terminal, or select an open connection. Ctrl+Alt+T brings the terminal forward. Session names are hidden from the menu while the app is locked. The integration can be disabled in Settings; a conflicting shortcut is reported there.
+- **Release notices and update checks.** The dashboard checks once per launch and offers the public release page when a newer stable release exists. Settings → Check for updates shows the release notes and links to the appropriate Android APK or Windows archive. Installation remains user controlled.
+- **Health check comparisons.** Each run compares status, summary and evidence with the previous run of the same server, highlighting changed rows and showing their previous results. The latest snapshot is retained in the encrypted vault across app restarts.
+
+
 ## [0.4.0] - 2026-08-30
 
 Ask a server everything at once, instead of typing it.

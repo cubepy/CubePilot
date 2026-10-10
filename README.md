@@ -1,252 +1,101 @@
 <div align="center">
 
-<img src="assets/logo/cubepilot-logo.svg" alt="CubePilot" width="420">
+<img src="assets/hero.svg" alt="CubePilot — Your servers. One workspace." width="100%">
 
-### Free. Professional. Cross Platform.
+**SSH, files, containers and server health. In your pocket and on your desktop.**
 
-A modern workspace for managing all of your servers — SSH, SFTP, Docker, Kubernetes, tunnels and monitoring in one app, for **Android** and **Windows**.
-
-[![Status](https://img.shields.io/badge/status-beta-8B5CF6?style=for-the-badge)](docs/roadmap.md)
-[![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=3B6EF6&label=latest)](https://github.com/cubepy/CubePilot/releases/latest)
+[![Latest release](https://img.shields.io/github/v/release/cubepy/CubePilot?style=for-the-badge&color=8B5CF6)](https://github.com/cubepy/CubePilot/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/cubepy/CubePilot/total?style=for-the-badge&color=22D3EE)](docs/downloads.md)
-[![Platforms](https://img.shields.io/badge/platforms-Android%20%7C%20Windows-3B6EF6?style=for-the-badge)](docs/installation.md)
-[![License](https://img.shields.io/badge/license-Freeware%20EULA-8B5CF6?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/cubepy/CubePilot?style=for-the-badge&color=22D3EE)](https://github.com/cubepy/CubePilot/stargazers)
+[![Freeware](https://img.shields.io/badge/Free_to_use-Android_%26_Windows-3B6EF6?style=for-the-badge)](LICENSE)
 
-**[فارسی](README-fa.md)** · [Download](#-download) · [Features](#-features) · [Roadmap](docs/roadmap.md) · [FAQ](docs/faq.md) · [Discussions](https://github.com/cubepy/CubePilot/discussions)
+**[Download](#download)** · [Explore features](#your-everyday-server-toolkit) · [Screenshots](#a-look-inside) · **[فارسی](README-fa.md)**
 
 </div>
 
----
+## Download
 
-> **v0.1.16 is out** — fixes to deleting servers, keys and tunnels, for Android and Windows. Grab it from [Releases](https://github.com/cubepy/CubePilot/releases/latest). Still a beta: stable enough for daily use, but not yet widely tested. Watch 👁 or Star ⭐ the repo to hear about the next one.
-
----
-
-## 🧊 What is CubePilot?
-
-Most SSH clients hand you a terminal and stop there. CubePilot is built around a different idea: your servers deserve a **workspace**, not a connection dialog.
-
-Open the app and you land on a dashboard — how many servers you have, which are online, what you touched last, which tunnels are live. From there you're one keystroke away from a terminal, a file transfer, a container restart, or the full history of everything that has ever happened on a machine.
-
-CubePilot is **completely free**, with no accounts, no subscriptions, no telemetry and no paywalled features. It is **closed source**, so this repository contains documentation and releases only — never source code.
-
-## 🕒 Server Timeline — the signature feature
-
-This is the part no other SSH client gets right.
-
-Every server in CubePilot keeps a **complete, searchable timeline of its own history**:
-
-- First connection and last connection
-- Every session, with its duration
-- Commands you ran
-- Files uploaded and downloaded over SFTP
-- Permission changes
-- Services and Docker containers you restarted
-- Tunnels created and torn down
-- Important errors and status changes
-- Your own notes, pinned to the moment you wrote them
-
-Search it, filter it, tag it, bookmark it. Three weeks later, when something breaks, you no longer have to remember what you did — you scroll back and read it.
-
-## ✨ Features
-
-This README describes where CubePilot is going. Sections carry the version
-they shipped in — everything tagged is in the build you can download today;
-the rest is on the [roadmap](docs/roadmap.md).
-
-<details open>
-<summary><b>Terminal</b> — <code>v0.1.0</code></summary>
-
-Multi-tab sessions in one window · split view, two servers side by side or
-stacked · jump hosts, reaching a server through a bastion · session manager · automatic reconnection that keeps your scrollback ·
-256-colour support · client-side syntax highlighting that colours plain server
-output · search a session's output · copy, paste and text selection · a key bar
-carrying Esc, Tab, Ctrl, Alt and the arrows · command palette on `Ctrl+K` ·
-professional colour schemes · font size selection
-
-<sub>Planned: bookmarks · paste history</sub>
-</details>
-
-<details>
-<summary><b>Server management</b> — <code>v0.1.0</code>, <code>v0.1.11</code></summary>
-
-Folders · favorites · pinning · search · tags · smart groups that collect
-servers by rule rather than by filing them · connect a whole group at once ·
-per-server HTTP and SOCKS5 proxy, for hosts you cannot reach directly
-
-<sub>Planned: live server cards showing OS, country, ping, CPU, RAM, disk and
-uptime</sub>
-</details>
-
-<details>
-<summary><b>SFTP file manager</b> — <code>v0.1.0</code></summary>
-
-Browse · upload · download · rename · delete · permission editor
-
-<sub>Planned: dual-pane layout · drag &amp; drop · in-place editing · file
-preview · folder size calculation · search</sub>
-</details>
-
-<details>
-<summary><b>Port forwarding</b> — <code>v0.1.0</code></summary>
-
-Local forward · remote forward · dynamic SOCKS5 · saved and managed tunnels
-</details>
-
-<details>
-<summary><b>Command library &amp; snippets</b> — <code>v0.1.0</code></summary>
-
-Save the commands you actually use — restart Nginx, restart Docker, update the
-system, run a backup, git pull, deploy — and fire them with one tap. Ships with
-26 ready-made snippets for Linux, Nginx, Docker, Git, Kubernetes and SSH.
-</details>
-
-<details>
-<summary><b>SSH key manager</b> — <code>v0.1.0</code></summary>
-
-RSA, ED25519 and ECDSA · import and generate · fingerprint display · passphrase
-support · keys held in the platform's secure storage
-</details>
-
-<details>
-<summary><b>Security</b> — <code>v0.1.0</code></summary>
-
-Fingerprint unlock · PIN · auto-lock · AES-256-GCM encrypted vault with the
-master key in the platform keystore · host key verification
-
-<sub>Planned: Windows Hello</sub>
-</details>
-
-<details>
-<summary><b>Backup, no account required</b> — <code>v0.1.0</code></summary>
-
-Export and import an encrypted backup file. Your data stays yours — there is no
-CubePilot cloud, and nothing is uploaded anywhere.
-</details>
-
-<details>
-<summary><b>Docker</b> — <code>v0.1.4</code>, <code>v0.1.9</code></summary>
-
-Containers, running and stopped · start, stop and restart · logs · shell into a
-container · delete · live CPU, memory and network per container · images,
-networks and volumes, each removable. Over the SSH connection you already have,
-so there is nothing to install and no second credential to store.
-</details>
-
-<details>
-<summary><b>Kubernetes</b> — <code>v0.1.8</code></summary>
-
-Pods, deployments, services, ConfigMaps and Secrets · one namespace or all of
-them · pod logs and a shell inside a pod · rollout restart and scaling. Run
-through the server you are connected to, using the kubeconfig it already has,
-so no cluster credential goes on your phone.
-
-<sub>Secrets are listed by name and type only — CubePilot never reads their
-contents.</sub>
-</details>
-
-<details>
-<summary><b>Log viewer</b> — <code>v0.1.7</code></summary>
-
-The systemd journal, the usual files under `/var/log`, `dmesg`, or any path you
-type · read the tail or follow it live · lines coloured by severity · filter
-literally or with a regular expression · bookmarks · export what is on screen
-</details>
-
-<details>
-<summary><b>Monitoring</b> — <code>v0.1.5</code>, <code>v0.1.10</code></summary>
-
-Live CPU, RAM, disk and network throughput on the dashboard, with temperature,
-load average, uptime, hostname and distribution — each with a chart of the last
-two minutes, read over the connection you already have.
-</details>
-
-### Platform-native touches
-
-Only the session notification has shipped so far; the rest is the v1.0.0
-milestone.
+**[v0.5.0 is available](https://github.com/cubepy/CubePilot/releases/tag/v0.5.0)** — resumable transfers, tmux shells, custom terminal keys, Windows tray, update notices and health comparisons.
 
 | Android | Windows |
-| --- | --- |
-| Session notification — `v0.1.0` | Fluent Design |
-| Material You with dynamic color | Mica and Acrylic surfaces |
-| Quick Settings tile | Tray icon |
-| Floating terminal | Global shortcut |
-| Split-screen support | Multi-window |
-| | Multi-monitor support |
+| :--- | :--- |
+| **[Download APK · ARM64](https://github.com/cubepy/CubePilot/releases/download/v0.5.0/CubePilot_v0.5.0_arm64_v8a.apk)** | **[Download portable ZIP · x64](https://github.com/cubepy/CubePilot/releases/download/v0.5.0/CubePilot_v0.5.0_windows_x64.zip)** |
+| For most current phones | Extract and run `cubepilot.exe` |
+| [32-bit ARM](https://github.com/cubepy/CubePilot/releases/download/v0.5.0/CubePilot_v0.5.0_armeabi_v7a.apk) · [x86_64](https://github.com/cubepy/CubePilot/releases/download/v0.5.0/CubePilot_v0.5.0_x86_64.apk) | Windows 10 1809 or newer, 64-bit |
 
-## 🎨 Design
+Android 8.0+ · [Installation guide](docs/installation.md) · [Release notes & SHA-256 checksums](https://github.com/cubepy/CubePilot/releases/tag/v0.5.0) · [All releases](https://github.com/cubepy/CubePilot/releases)
 
-Dark, Light, OLED and Glass themes built on a blue → purple palette with a cyan accent. Glassmorphism, acrylic blur, floating cards, soft shadows, and animations that stay smooth at 120 Hz on displays that support it.
+## Your everyday server toolkit
 
-## 📥 Download
+CubePilot brings the work around an SSH session into one place: connect to a host, move files, inspect a container, follow logs and review server activity. Free for personal and commercial use, with no subscription or account required.
 
-All builds are published through **[GitHub Releases](https://github.com/cubepy/CubePilot/releases)** — that is the only official distribution channel.
+| Connect & work | Inspect & manage | Keep your context |
+| :--- | :--- | :--- |
+| Multi-session SSH and split terminals | Docker containers, logs and shell | Per-server activity timeline |
+| SSH keys, jump hosts and proxies | Kubernetes workloads and operations | Notes, search and bookmarks |
+| SFTP browsing and file transfers | CPU, memory, disk and network charts | Saved commands and snippets |
+| Local, remote and SOCKS5 tunnels | Live logs and server health checks | Folders, tags and smart groups |
 
-| Platform | File | Requirement |
-| --- | --- | --- |
-| Android | `.apk` | Android 8.0 (API 26) or newer |
-| Windows | `.zip` (portable) | Windows 10 1809 or newer, 64-bit |
+### Pick up where you left off
 
-Step-by-step instructions, including how to install an APK outside the Play Store and how to handle the SmartScreen prompt on Windows, are in **[docs/installation.md](docs/installation.md)**.
+- **Transfers you can control.** Pause, resume or cancel SFTP uploads and downloads. After a connection failure, reconnect and resume the retained transfer. The queue lasts for the current app launch.
+- **Remote shells that stay alive.** Enable tmux on a saved server to reattach after a disconnect or app restart. Requires tmux on the server; otherwise CubePilot opens a regular shell.
+- **Changes you can see.** Health checks compare the latest result with the previous run, with the snapshot saved across restarts.
 
-> Download CubePilot only from this repository's Releases page. Builds from anywhere else are not ours and are not safe to trust with your SSH keys.
+### Built for both screens
 
-<div align="center">
+| Android | Windows |
+| :--- | :--- |
+| Customizable terminal key row | Native system tray controls |
+| Session notification and Quick Settings access | `Ctrl+Alt+T` brings the terminal forward |
+| Picture-in-picture terminal | Portable ZIP distribution |
+| English and Persian with RTL support | English and Persian with RTL support |
 
-<img src="assets/downloads.svg" alt="CubePilot downloads over time" width="760">
+Both platforms include release notices and manual update checks. Choose your terminal keys, order and row height in Settings.
 
-<sub>Recorded daily since 20 September 2026 — GitHub keeps no download history, so this starts the day we began writing the numbers down. <a href="docs/downloads.md">How this is counted</a></sub>
-
-</div>
-
-## 📸 Screenshots
+## A look inside
 
 <table>
-  <tr>
-    <td width="33%"><img src="assets/screenshots/01-dashboard.jpg" alt="Dashboard"><br><sub><b>Dashboard</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/02-servers.jpg" alt="Servers"><br><sub><b>Servers</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/03-terminal.jpg" alt="Terminal"><br><sub><b>Terminal</b></sub></td>
-  </tr>
-  <tr>
-    <td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="Server Timeline"><br><sub><b>Server Timeline</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/05-sftp.jpg" alt="SFTP file manager"><br><sub><b>SFTP</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/06-tunnels.jpg" alt="Tunnels"><br><sub><b>Tunnels</b></sub></td>
-  </tr>
-  <tr>
-    <td width="33%"><img src="assets/screenshots/07-keys.jpg" alt="SSH keys"><br><sub><b>SSH keys</b></sub></td>
-    <td width="33%"><img src="assets/screenshots/08-settings.jpg" alt="Settings"><br><sub><b>Settings</b></sub></td>
-    <td width="33%"></td>
-  </tr>
+<tr><td width="33%"><img src="assets/screenshots/01-dashboard.jpg" alt="CubePilot Dashboard"><br><sub>Dashboard</sub></td><td width="33%"><img src="assets/screenshots/02-servers.jpg" alt="CubePilot Servers"><br><sub>Servers</sub></td><td width="33%"><img src="assets/screenshots/03-terminal.jpg" alt="CubePilot Terminal"><br><sub>Terminal</sub></td></tr>
+<tr><td width="33%"><img src="assets/screenshots/04-timeline.jpg" alt="CubePilot Timeline"><br><sub>Timeline</sub></td><td width="33%"><img src="assets/screenshots/05-sftp.jpg" alt="CubePilot SFTP files"><br><sub>SFTP files</sub></td><td width="33%"><img src="assets/screenshots/06-tunnels.jpg" alt="CubePilot Tunnels"><br><sub>Tunnels</sub></td></tr>
 </table>
 
-> Every server in these shots is fabricated: the addresses come from the
-> documentation ranges reserved by RFC 5737 and RFC 2606, so no real
-> infrastructure appears in them. The terminal and SFTP shots are the
-> exception — both need a live session, which the demo workspace
-> deliberately cannot provide, so they were taken against a real host with
-> the hostname redacted. See [docs/screenshots.md](docs/screenshots.md).
+<sub>Existing app screenshots; appearance may differ in v0.5.0. Demo data and redacted sessions: [how these were captured](docs/screenshots.md).</sub>
 
-## 🗺 Roadmap
 
-See **[docs/roadmap.md](docs/roadmap.md)** for what is planned and what is being worked on right now.
+## Your servers have a history
 
-## 📝 Changelog
+The **Server Timeline** keeps activity alongside the server it belongs to. Review sessions and recorded actions, add notes, search events and return to the context of your last visit. Pair that history with live monitoring and health comparisons when investigating a problem.
 
-Every released version is documented in **[CHANGELOG.md](CHANGELOG.md)**.
+## Local data. Encrypted vault.
 
-## 🐞 Reporting a bug
+Server credentials and settings are held in an **AES-256-GCM encrypted local vault**, with the master key protected by platform secure storage. Host-key verification, PIN lock, supported biometric unlock and encrypted backup export help protect your workspace.
 
-1. Search [existing issues](https://github.com/cubepy/CubePilot/issues?q=is%3Aissue) first — someone may have hit it already.
-2. Open a **[Bug report](https://github.com/cubepy/CubePilot/issues/new/choose)** and fill in the template: app version, platform, OS version, steps to reproduce.
-3. **Never paste an SSH private key, password, passphrase or a real server IP into an issue.** Replace them with placeholders. See [SECURITY.md](SECURITY.md) for how to report a security problem privately.
+Docker and Kubernetes operations use your SSH connection and the tools and permissions available on the remote server. Updates check GitHub for releases; installation stays under your control.
 
-Stuck on something that may not be a bug? Try **[docs/troubleshooting.md](docs/troubleshooting.md)** first.
+CubePilot is **freeware and closed source**. This public repository hosts documentation, screenshots and downloadable builds. [License](LICENSE) · [Security reporting](SECURITY.md) · [FAQ](docs/faq.md)
 
-## 💡 Suggesting a feature
+## Start in three steps
 
-Open a **[Feature request](https://github.com/cubepy/CubePilot/issues/new/choose)**, or start a thread in **[Discussions → Ideas](https://github.com/cubepy/CubePilot/discussions)** if you want to talk it through before it becomes a formal request. Tell us the problem you're hitting, not only the solution you have in mind — it usually leads to a better feature.
+1. Download the build for your device and follow the [installation guide](docs/installation.md).
+2. Add a server with its hostname, username and SSH key or password. Verify its host-key fingerprint.
+3. Open a terminal, browse files or inspect the server from its workspace.
+
+## Help shape CubePilot
+
+[Report a bug](https://github.com/cubepy/CubePilot/issues/new/choose) · [Request a feature](https://github.com/cubepy/CubePilot/issues/new/choose) · [Join discussions](https://github.com/cubepy/CubePilot/discussions) · [Troubleshooting](docs/troubleshooting.md)
+
+Include your app version, platform and steps to reproduce. Replace credentials and private infrastructure details with placeholders. Report security issues using [SECURITY.md](SECURITY.md).
+
+[Changelog](CHANGELOG.md) · [Roadmap](docs/roadmap.md) · [Download statistics](docs/downloads.md)
+
+<details>
+<summary><b>Download history</b></summary>
+
+<img src="assets/downloads.svg" alt="Recorded CubePilot download history" width="100%">
+
+Recorded daily since 20 September 2026. [How this is counted](docs/downloads.md).
+
+</details>
 
 ## ❤️ Support the project
 
@@ -262,14 +111,11 @@ If it saves you time and you'd like to chip in toward hosting, signing certifica
 
 Free ways to help are worth just as much: ⭐ star the repository, file a good bug report, or tell someone who is still juggling four terminal windows.
 
-## 📄 License
-
-CubePilot is free to use, personally and commercially, under a proprietary end-user license. The source code is not published. See **[LICENSE](LICENSE)**.
 
 ---
 
 <div align="center">
 
-Part of the **Cube** ecosystem · [cubesystem.top](https://cubesystem.top)
+**CubePilot** · Part of the Cube ecosystem · [cubesystem.top](https://cubesystem.top)
 
 </div>

@@ -84,8 +84,8 @@ CubePilot's signature feature, and the reason the app exists.
       split-screen
 - [x] Android: Quick Settings tile, floating terminal that keeps a session
       on screen over other apps
-- [ ] Windows: Fluent Design, Mica and Acrylic, tray icon, global shortcut,
-      multi-window, multi-monitor
+- [x] Windows: system tray and global shortcut — shipped in v0.5.0
+- [ ] Windows: Fluent Design, Mica and Acrylic, multi-window, multi-monitor
 - [x] Accessibility: labels on icon-only controls, one announcement per
       reading and per server, charts hidden from screen readers, layouts that
       survive large system text

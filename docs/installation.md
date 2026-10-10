@@ -4,12 +4,14 @@ CubePilot is distributed **only** through
 [GitHub Releases](https://github.com/cubepy/CubePilot/releases). Do not install
 a build from anywhere else — you would be handing your SSH keys to a stranger.
 
-Every release publishes exactly two files:
+Each release publishes three Android APK variants and one Windows archive:
 
-| File | Platform |
+| File (v0.5.0) | Platform |
 | --- | --- |
-| `CubePilot-vX.Y.Z-android.apk` | Android 8.0 (API 26) and newer |
-| `CubePilot-vX.Y.Z-windows-x64.zip` | 64-bit Windows 10 1809 and newer |
+| `CubePilot_v0.5.0_arm64_v8a.apk` | Most current Android phones |
+| `CubePilot_v0.5.0_armeabi_v7a.apk` | 32-bit ARM Android devices |
+| `CubePilot_v0.5.0_x86_64.apk` | Compatible x86_64 Android devices/emulators |
+| `CubePilot_v0.5.0_windows_x64.zip` | 64-bit Windows 10 1809 and newer |
 
 There is no installer, no MSIX and no store listing. Anything else claiming to
 be CubePilot is not.
@@ -26,9 +28,9 @@ be CubePilot is not.
 
    | File | For |
    |---|---|
-   | `…-arm64-v8a.apk` | **Almost every phone.** Anything sold since roughly 2016. Start here. |
-   | `…-armeabi-v7a.apk` | Older or very cheap 32-bit phones. Use this only if the arm64 file refuses to install. |
-   | `…-x86_64.apk` | Emulators and Chromebooks. Not a phone. |
+   | `…_arm64_v8a.apk` | **Almost every phone.** Anything sold since roughly 2016. Start here. |
+   | `…_armeabi_v7a.apk` | Older or very cheap 32-bit phones. Use this only if the arm64 file refuses to install. |
+   | `…_x86_64.apk` | Emulators and Chromebooks. Not a phone. |
 
    If the wrong one is picked, Android refuses it at install time with
    "App not installed" rather than installing something broken.
